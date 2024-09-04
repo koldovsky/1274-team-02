@@ -22,6 +22,6 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 });
 ```
 # Team members
-
+Repko Mariia
 Makovskiyi Dmytro
 Andriy Kravets
