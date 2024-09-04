@@ -23,4 +23,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 ```
 # Team members
 
-Makovskiyi Dmutro
+Makovskiyi Dmytro
