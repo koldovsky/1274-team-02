@@ -24,3 +24,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 # Team members
 
 Makovskiyi Dmytro
+Andriy Kravets
