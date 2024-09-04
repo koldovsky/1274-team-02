@@ -21,3 +21,6 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
     if (loadedPartialsCount === totalPartials) init();
 });
 ```
+# Team members
+
+Makovskiyi Dmutro
