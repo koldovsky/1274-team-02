@@ -27,3 +27,4 @@ Makovskiyi Dmytro
 Andriy Kravets
 Yulia Ivashko
 Anna-Mariia Hyk
+Hnidets Iryna
