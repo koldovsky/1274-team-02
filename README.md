@@ -25,3 +25,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 Repko Mariia
 Makovskiyi Dmytro
 Andriy Kravets
+Yulia Ivashko
