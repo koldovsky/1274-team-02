@@ -22,11 +22,12 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 });
 ```
 # Team members
-Repko Mariia
-Makovskiyi Dmytro
-Andriy Kravets
-Yulia Ivashko
-Anna-Mariia Hyk
-Hnidets Iryna
-Kobylynskyi Nikita
- - OleksiiMitiaiev
+- Repko Mariia
+- Makovskiyi Dmytro
+- Andriy Kravets
+- Yulia Ivashko
+- Anna-Mariia Hyk
+- Hnidets Iryna
+- Kobylynskyi Nikita
+- OleksiiMitiaiev
+- Misha Shamrin
