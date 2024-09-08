@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+
+:root {
+    --collor-accent: rgb(249, 186, 56);
+    --color-main-text: #ffffff;
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
