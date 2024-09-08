@@ -32,3 +32,4 @@ document.body.addEventListener('htmx:afterOnLoad', () => {
 - OleksiiMitiaiev
 - Misha Shamrin
 - Markiyan Grybok
+- Oleksandr Chereshnevyi
