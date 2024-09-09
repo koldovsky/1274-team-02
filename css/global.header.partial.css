@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+.header{
+    background-image: url("../img/astronaut/astronaut.png");
+    background-size: cover; /* Розтягує зображення по всьому елементу */
+    background-position: center; /* Центрує зображення */
+    background-repeat: no-repeat; /* Забороняє повторення зображення */
+    height: 800px;
+}
+
+.header__logo img{
+    width: 130px;
+}
+.header .header__menu-link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 16px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header .header__menu-link span{
+    margin-right: 5px;
+}
+
+h1{
+    width: 645px;
+    font-size: 75px;
+    font-family: "Fredoka", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: white;
+}
+
+.header__start_info-about_company{
+    font-size: 20px;
+    font-family: "Fredoka", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    color: white;
+}
+
+.header__start_info-learn_more{
+    font-size: 15.4px;
+    font-family: "Fredoka", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: white;
+    background: #14a85b;
+    padding: 22px 51px;
+    border-radius: 20px;
+}

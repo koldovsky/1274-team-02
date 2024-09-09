@@ -1,2 +1,5 @@
 @import "global.css";
+@import "global.header.partial.css";
 @import "global.section-video.partial.css";
+@import "index.section-time-flies.css";
+@import "index.section-lets-create.css";
