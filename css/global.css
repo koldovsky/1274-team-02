@@ -9,6 +9,7 @@
 :root {
     --collor-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
+    --color-background-card: rgb(14, 49, 84);
     scroll-behavior: smooth;
 }
 
