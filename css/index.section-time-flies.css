@@ -1,6 +1,37 @@
-.flies__title {
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.time-flies__background-one{
+    background-image: url("../img/time-flies/backflies.png");
+    background-size: cover; /* Розтягує зображення по всьому елементу */
+    background-position: center; /* Центрує зображення */
+    background-repeat: no-repeat; /* Забороняє повторення зображення */
+    height:
 }
-.flies__title2 {
-    color: #f8ba39;
+
+.time-flies__title {
+    font-family:"Fredoka", sans-serif;
+    color:red;
+    font-size: 56px;
+}
+
+.time-flies__title2 {
+    font-family:"Fredoka", sans-serif;
+    font-size: 56px;
+    color: #f8ba39
+}
+
+.time-flie__text-one{
+    font-family:"Fredoka", sans-serif;
+    color: red;
+    font-size: 20px;
+}
+
+.time-flie__text-two{
+    font-family:"Fredoka", sans-serif;
+    color: red;
+    font-size: 18px;
+}
+
+.time-flies__dot1 {
+    color: red;
 }
