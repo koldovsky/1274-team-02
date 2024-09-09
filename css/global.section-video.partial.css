@@ -1,16 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .video {
-    background-image: url(img/.section-video/background-image);
+    background-image: url("../img/section-video/background_section_video.png");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+}
+
+.video_content-box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
 }
 .video__container {
-
     width: 600px;
     height: auto;
-    border: ;
     border-radius: inherit;
 }
 
+.video__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .video__text {
+    text-align: center;
     tab-size: 25px;
-    color: var(--collor-accent);
+    color: var(--color-main-text);
+}
+
+.video__cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+}
+
+.video__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 300px;
+    height: 500px;
+    border-radius: 50px;
+    
+}
+
+.video__card-con-item {
+    display: block;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--color-background-card);
+}
+
+.video__card-image {
+    width: 100px;
+}
+
+.video__card-title {
+    color: var(--color-main-text);
+    font-size: 20px;
+}
+
+.video__card-line {
+    width: 100px;
+    height: 2px;
+    /* background: #ffffff; */
+}
+
+.video__card-description {
+    color: var(--color-main-text);
+}
+
+.card__button {
+    font-size: 15px;
+    color: var(--color-main-text);
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: blue;
 }
