@@ -10,9 +10,13 @@
 }
 
 :root {
+    --ui-brand-color: #f9ba38;
     --collor-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
+    --menu-color:rgba(255, 255, 255, 0.73);
     --color-background-card: rgb(14, 49, 84);
+    --button-color:#19ca6d;
+    --dark-button-color:rgb(20, 168, 91);
     scroll-behavior: smooth;
 }
 

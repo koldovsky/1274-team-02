@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:wght@200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-.header{
+/* Загальні стилі для .header */
+.header {
     background-image: url("../img/astronaut/astronaut.png");
-    background-size: cover; /* Розтягує зображення по всьому елементу */
-    background-position: center; /* Центрує зображення */
-    background-repeat: no-repeat; /* Забороняє повторення зображення */
-    height: 800px;
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
-.header__logo img{
+/* Стилі навігації */
+.header__navigation {
+    padding: 30px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__navigation-logo img {
     width: 130px;
 }
-.header .header__menu-link{
+.header__navigation-menu-media {
+    display: inline-block;
+}
+.header .header__navigation-menu-link {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.73);
+    color: var(--menu-color);
     font-size: 16px;
     display: block;
     overflow: hidden;
@@ -24,34 +30,103 @@
     font-style: normal;
 }
 
-.header .header__menu-link span{
+.header .header__navigation-menu-link span {
     margin-right: 5px;
 }
 
-h1{
-    width: 645px;
+/* Стилі інформаційного блоку */
+.header__start_info {
+    padding: 120px 24px;
+}
+.header__start_info-introduction {
     font-size: 75px;
     font-family: "Fredoka", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
-    color: white;
+    color: var(--color-main-text);
 }
-
-.header__start_info-about_company{
+.header__start_info-about_company {
     font-size: 20px;
     font-family: "Fredoka", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
-    color: white;
+    color: var(--color-main-text);
+    margin-top: 55px;
+}
+/* Стилі списків */
+ul {
+    margin: 0;
+}
+li {
+    list-style-type: none;
 }
 
-.header__start_info-learn_more{
-    font-size: 15.4px;
-    font-family: "Fredoka", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    color: white;
-    background: #14a85b;
-    padding: 22px 51px;
-    border-radius: 20px;
+/* Адаптивні стилі */
+@media (min-width: 760px) {
+    .header__start_info {
+        width: 60%;
+        padding: 120px 55px;
+    }
+    .header__navigation {
+        padding: 30px 55px;
+    }
+    .header__navigation-logo img {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1200px){
+    .centering {
+        width: 1200px;
+        margin: auto;
+    }
+    .header__menu ul {
+        display: flex;
+        width: 580px;
+        justify-content: space-between;
+    }
+    .header__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 720px;
+    }
+    .header__navigation{
+        padding: 30px 40px;
+    }
+    .header__start_info-introduction, .header__start_info-about_company {
+        width: 60%;
+    }
+    .header__start_info {
+        padding-top: 170px;
+    }
+    .header__start_info {
+        padding: 120px 40px;
+    }
+}
+@media (min-width: 1500px){
+    .centering {
+        width: 1400px;
+        margin: auto;
+    }
+    .header__menu ul {
+        display: flex;
+        width: 580px;
+        justify-content: space-between;
+    }
+    .header__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 720px;
+    }
+    .header__navigation{
+        padding: 30px 15px;
+    }
+    .header__start_info-introduction, .header__start_info-about_company {
+        width: 50%;
+    }
+    .header__start_info{
+        padding: 120px 40px;
+    }
 }

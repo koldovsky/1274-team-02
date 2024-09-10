@@ -1,29 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+.time-flies {
+  background-image: url("../img/time-flies/backflies.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .time-flies__title {
-    font-family:"Fredoka", sans-serif;
-    color:red;
-    font-size: 56px;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.time-flies__title2 {
-    font-family:"Fredoka", sans-serif;
-    font-size: 56px;
-    color: #f8ba39
+.time-flies__title--secondary {
+  font-family: "Fredoka", sans-serif;
+  font-size: 56px;
+  color: #f8ba39;
+  font-weight: bold;
+  text-align: center;
 }
 
-.time-flie__text-one{
-    font-family:"Fredoka", sans-serif;
-    color: red;
-    font-size: 20px;
+.time-flies__text--primary {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
-.time-flie__text-two{
-    font-family:"Fredoka", sans-serif;
-    color: red;
-    font-size: 18px;
+.time-flies__text--secondary {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
 
-.time-flies__dot1 {
-    color: red;
+.time-flies__dots-group {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.time-flies__button--learn-more {
+margin: 0 auto;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f8ba39;
+  border-radius: 10px;
+  border: none;
+}
+
+.time-flies__button--learn-more:hover {
+  cursor: pointer;
+}
+
+.time-flies__title,
+.time-flies__title--secondary {
+  display: inline;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.time-flies__header {
+    text-align: center;
+  }
+
+.time-flies__button--learn-more {
+    font-family: "Fredoka", sans-serif;
 }
