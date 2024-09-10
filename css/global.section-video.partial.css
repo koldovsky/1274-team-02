@@ -18,6 +18,16 @@
     border-radius: inherit;
 }
 
+.video__image {
+    max-width: 80%;
+}
+
+@media (max-width: 400px) {
+    .video__image {
+        max-width: 60%;
+    } 
+}
+
 .video__content {
     display: flex;
     justify-content: center;
@@ -31,9 +41,24 @@
 }
 
 .video__cards {
-    display: flex;
+    display: grid;
+    gap: 15px;
     justify-content: center;
     flex-direction: row;
+}
+
+@media (min-width: 600px) {
+    .video__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+@media (min-width: 945px) {
+    .video__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
 }
 
 .video__card {
