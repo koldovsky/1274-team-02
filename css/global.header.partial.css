@@ -4,6 +4,7 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
+    height: 850px;
 }
 
 /* Стилі навігації */
@@ -93,6 +94,9 @@ li {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+    }
+    .header{
+        height: 942px;
     }
 
 }
