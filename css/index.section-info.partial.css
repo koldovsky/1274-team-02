@@ -1,0 +1,6 @@
+/* Загальні стилі для .header */
+.section {
+    background-image: url("../img/astronaut/astronaut.png");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
