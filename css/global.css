@@ -10,6 +10,7 @@
 }
 
 :root {
+    --ui-brand-color: #f9ba38;
     --collor-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
     --menu-color:rgba(255, 255, 255, 0.73);
