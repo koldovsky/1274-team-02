@@ -11,7 +11,6 @@
   color: white;
   font-size: 56px;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 20px;
   line-height: 1;
 }
@@ -21,16 +20,14 @@
   font-size: 56px;
   color: #f8ba39;
   font-weight: bold;
-  text-align: center;
 }
 
 .time-flies__text--primary {
   font-family: "Fredoka", sans-serif;
   color: white;
   font-size: 20px;
-  text-align: center;
-  margin-bottom: 40px; /* Відступ знизу */
-  line-height: 1.5; /* Інтервал між рядками */
+  margin-bottom: 40px; 
+  line-height: 1.5;
   max-width: 800px;
 }
 
@@ -38,13 +35,11 @@
   font-family: "Fredoka", sans-serif;
   color: white;
   font-size: 18px;
-  text-align: center;
 }
 
 .time-flies__dots-group {
   color: white;
   font-weight: auto;
-  text-align: center;
 }
 
 .time-flies__button--learn-more {
@@ -53,7 +48,6 @@
   color: white;
   display: inline-block;
   padding: 5px 15px;
-  text-align: center;
   text-decoration: none;
   background-color: #f8ba39;
   border-radius: 12px;
@@ -71,10 +65,14 @@
   text-align: center;
 }
 
-.time-flies__header {
-  text-align: center;
-}
-
 .time-flies__button--learn-more {
   font-family: "Fredoka", sans-serif;
+}
+
+.container {
+  display: flex;
+    justify-content: left; 
+    align-items: left; 
+    flex-direction: column; 
+    text-align: left;
 }
