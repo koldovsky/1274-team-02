@@ -9,6 +9,11 @@
 :root {
     --collor-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
+    --text-color: black;
+    --border-color: black;
+    --accent-color:#824b4e;
+    --color-icons:rgb(218,50,101);
+    font-family: "Nunito", sans-serif;
     scroll-behavior: smooth;
 }
 
