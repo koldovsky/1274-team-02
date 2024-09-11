@@ -7,11 +7,8 @@
 
 }
 
-body {
-    background-image: url("../img/background_color.png");
-
-
-
+.new-mobile-games{
+    background-image: url(../img/new-mobile-games-carousel/background_color.png)
 }
 
 .new-mobile-games__carousel-photo {
