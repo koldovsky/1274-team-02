@@ -1,0 +1,70 @@
+.part {
+    background-image: url("../img/astronaut/astronaut.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    width: 100%;
+}
+
+.part__title {
+    font-size: 80px;
+    font-family: "Fredoka", cursive;
+    font-weight: 700;
+    color: var(--color-main-text);
+    line-height: 1;
+    width: 70%;
+    padding-left: 50px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.part2 {
+    background-color: #103758;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.video__text {
+    tab-size: 25px;
+    color: var(--color-main-text);
+}
+
+.video__content {
+    width: 100%;
+    padding: 20px;
+}
+
+.mobile-games {
+    background-color: #6c3064;
+    text-align: center;
+}
+
+    .mobile-games__title {
+        font-size: 40px;
+        font-family: "Fredoka", cursive;
+        font-weight: 700;
+        color:white;
+        line-height: 1;
+        padding-top: 20px;
+    }
+
+    .mobile-games__p {
+        color: #F9BA38;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1;
+
+    }
+    .mobile-games__discription {
+        color:white;
+        font-weight: 700;
+        line-height: 1;
+        padding-bottom: 20px;
+        
+    
+    }

@@ -1,0 +1,55 @@
+.lets-create {
+    background-image: url("../img/lets-create/backlets.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 110px 0;
+}
+
+.lets-create__dot-group {
+    color: #f8ba39;
+    font-weight: auto;
+  text-align: center;
+}
+
+.lets-create__title {
+    font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.lets-create__text--primary {
+    font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.lets-create__button--contact {
+    font-size: 14px;
+    color: white;
+    padding: 5px 15px;
+    background-color: #f8ba39;
+    border-radius: 12px;
+    border: none;
+  }
+  
+  .time-flies__button--learn-more:hover {
+    cursor: pointer;
+  }
+
+  .lets-create__actions {
+    font-family: "Fredoka", sans-serif;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: center; /* Вирівнювання по вертикалі */
+    flex-direction: column; /* Елементи у стовпчик */
+    text-align: center; /* Текст по центру */
+  }

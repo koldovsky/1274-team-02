@@ -1,23 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *,
-*::before,
-*::after {
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    block-size: border-box;
+    box-sizing: border-box;
+    
 }
 
 :root {
+    --ui-brand-color: #f9ba38;
     --collor-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
     --text-color: black;
     --border-color: black;
     --accent-color:#824b4e;
     --color-icons:rgb(218,50,101);
-    font-family: "Nunito", sans-serif;
+    --menu-color:rgba(255, 255, 255, 0.73);
+    --color-background-card: rgb(14, 49, 84);
+    --button-color:#19ca6d;
+    --dark-button-color:rgb(20, 168, 91);
     scroll-behavior: smooth;
 }
 
 img {
     display: block;
+    width: 100%;
     max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 15px;
+    margin: auto;
 }

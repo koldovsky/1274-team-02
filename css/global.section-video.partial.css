@@ -1,16 +1,125 @@
 .video {
-    background-image: url(img/.section-video/background-image);
+    background-image: url("../img/section-video/background_section_video.png");
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+}
+
+.video_content-box {
+    display: flex;
+    flex-direction: column;
 }
 .video__container {
-
-    width: 600px;
+    max-width: 600px;
     height: auto;
-    border: ;
     border-radius: inherit;
+    margin: auto;
+}
+
+.video__player {
+    margin: auto;
+}
+.video__image {
+    max-width: 80%;
+    margin: auto;
+    /* margin: 0px 10px; */
+    margin-bottom: 15px;
+}
+
+@media (max-width: 400px) {
+    .video__image {
+        max-width: 60%;
+    } 
+}
+
+.video__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .video__text {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
     tab-size: 25px;
-    color: var(--collor-accent);
+    color: var(--color-main-text);
+}
+
+.video__cards {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media (min-width: 600px) {
+    .video__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+@media (min-width: 945px) {
+    .video__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
+}
+
+.video__card {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    font-family: "Nunito", sans-serif;
+    
+}
+
+.video__card-con-item {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    background: var(--color-background-card);
+    border-radius: 20px;
+}
+
+.video__card-image {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.video__card-title {
+    color: var(--color-main-text);
+    font-size: 20px;
+}
+
+.video__card-line {
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    background: var(--color-main-text);
+}
+
+.video__card-description {
+    color: var(--color-main-text);
+}
+
+.card__button {
+    font-size: 12px;
+    color: var(--color-main-text);
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #45a0e4;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.card__button_link:hover {
+    text-decoration: none;
 }

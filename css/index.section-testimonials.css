@@ -1,0 +1,126 @@
+.testimonials{
+    background-image: url(../img/testimonials-section/background-testimonials.png);
+}
+
+.testimonials__main-center-imgg{
+    width: 70px;
+}
+
+.testimonials{
+    padding: 90px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials__header{
+    font-size: 40px;
+    color: var(--color-main-text);
+    font-family: "Fredoka One", cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonials__header-h{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials__header-point{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials__header-points-p{
+    color: var(--ui-brand-color);
+    font-size: 30px;
+}
+
+.testimonials__paragrah{
+    font-family: "Nunito", sans-serif;
+    color: var(--color-main-text);
+}
+
+.testimonials__color3{
+    color: #F47C67;
+}
+
+.testimonials__color2{
+    color: #80C8FE;
+}
+
+.testimonials__color1{
+    color: #F9BA38;
+}
+
+.testimonials__main{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__main-center-social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.testimonials__main-center-social-media-list{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.testimonials__main-center-social-media-f,
+.testimonials__main-center-social-media-i{
+    margin-right: 5px;
+}
+.testimonials__main-center-p{
+    display: flex;
+    justify-content: center;
+}
+.testimonials__header-text{
+    display: flex;
+    justify-content: center;
+}
+.testimonials__container{
+    padding: 0 24px;
+}
+.testimonials__main-center-p2{
+    display: flex;
+    justify-content: center;
+}
+.testimonials__main-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials__header-h2{
+    font-size: 40px;
+    font-family: "Fredoka One", cursive;;
+}
+.testimonials__header-texts{
+    font-size: 20px;
+}
+
+.testimonials__main-center-img,
+.testimonials__header-h{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    .testimonials__main-center-imgg{
+        width: 120px;
+    }
+}
+
+@media (min-width: 990px){
+    .testimonials__header-points-p{
+        
+        font-size: 40px;
+    }
+}
