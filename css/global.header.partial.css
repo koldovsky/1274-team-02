@@ -81,14 +81,14 @@ li {
     height: 2px;
     width: 100%;
     transform:scale(1);
-    background-color: white;
+    background-color: var(--color-main-text);
 }
 .header__navigation-drop_down_menu::before, .header__navigation-drop_down_menu::after{
     content: '';
     position: absolute;
     height: 2px;
     width: 100%;
-    background-color: white;
+    background-color: var(--color-main-text);
     transition: all 0.3s ease 0s;
 }
 .header__navigation-drop_down_menu::before{
