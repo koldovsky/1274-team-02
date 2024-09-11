@@ -1,5 +1,10 @@
 .our-team {
   background-image: url(../img/team-profiles/bg-our-team.png);
+  padding: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .our-team__title {
   font-family: "Fredoka", sans-serif;
@@ -7,8 +12,20 @@
   font-size: 56px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 0 0 50px 0;
   line-height: 1;
 }
 .our-team__container-points {
+  color: #f8ba39;
+  font-weight: 900;
+  text-align: center;
+}
+.our-team__description {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 50px 0;
+  line-height: 1;
 }
