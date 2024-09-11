@@ -24,6 +24,8 @@
 .video__image {
     max-width: 80%;
     margin: auto;
+    /* margin: 0px 10px; */
+    margin-bottom: 15px;
 }
 
 @media (max-width: 400px) {
@@ -39,6 +41,7 @@
 }
 
 .video__text {
+    font-family: "Nunito", sans-serif;
     text-align: center;
     tab-size: 25px;
     color: var(--color-main-text);
@@ -67,29 +70,27 @@
 
 .video__card {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     width: 300px;
     height: 500px;
     margin: auto;
+    font-family: "Nunito", sans-serif;
     
 }
 
 .video__card-con-item {
     display: block;
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    /* justify-content: center; */
-    align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     background: var(--color-background-card);
     border-radius: 20px;
 }
 
 .video__card-image {
-    width: 100px;
+    width: 80px;
+    margin: 0 auto;
 }
 
 .video__card-title {
@@ -100,6 +101,7 @@
 .video__card-line {
     width: 100px;
     height: 2px;
+    margin: 0 auto;
     background: var(--color-main-text);
 }
 
@@ -108,11 +110,16 @@
 }
 
 .card__button {
-    font-size: 15px;
+    font-size: 12px;
     color: var(--color-main-text);
-    width: 190px;
+    width: 220px;
     height: 50px;
-    border-radius: 25px;
-    background-color: blue;
+    border-radius: 15px;
+    background-color: #45a0e4;
     padding: 10px 15px;
+    cursor: pointer;
+}
+
+.card__button_link:hover {
+    text-decoration: none;
 }

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.new-mobile-games{
+    background-image: url(../img/new-mobile-games-carousel/background_color.png)
+}
+
+.new-mobile-games__carousel-photo {
+    width: 293px;
+    height: 508.375px;
+
+
+}
+
+.new-mobile-games__carousel-app-store,
+.new-mobile-games__carousel-google-play {
+    width: 120px;
+    height: 41.5875px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 0.8px solid rgb(166, 166, 166);
+
+
+}
+
+.new-mobile-games__carousel-google-play {
+    width: 135px;
+    height: 41.4875px;
+}
+
+.new-mobile-games__title {
+    font-family: "Fredoka", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.new-mobile-games__points {
+    margin: 0px;
+    text-align: center;
+    color: rgb(227, 196, 15);
+
+}
+
+.new-mobile-games__text {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+
+
+}
+.new-mobile-games__carousel-slide{
+    width: 280px;
+}
+
+.new-mobile-games__points {
+    color: rgb(249, 186, 56);
+    font-weight: 700;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.new-mobile-games__carousel-slide{
+    font-family: "Nunito Sans";
+    color: rgb(255, 255, 255);
+    margin: 25px;
+
+}
+.new-mobile-games__carousel-subtitle{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 600;
+}
+.new-mobile-games__carousel-title{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.new-mobile-games__carousel-svg{
+    width: 20px;
+}
+
+.new-mobile-games__carousel-svg-and-p{
+    display: flex;
+}
+
+.new-mobile-games__block-carousel{
+    display: flex;
+}
+
+.new-mobile-games__block-carousel{
+    justify-content: center;
+}
+
+
+
+
+
+
+
