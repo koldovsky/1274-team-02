@@ -33,6 +33,9 @@
                 </a>                              
             </div>
         </nav>
+        <div class="header__navigation-drop_down_menu">
+            <span></span>
+        </div>
     </div>
     <div class="header__start_info centering">
         <h1 class="header__start_info-introduction">We Create Innovative Games You Just Can't Stop Playing</h1>
@@ -40,3 +43,9 @@
         <a href="#" class="header__start_info-learn_more button-name-learn-more">LEARN MORE</a>
     </div>
 </header>
+<script>
+    document.querySelector('.header__navigation-drop_down_menu').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.nav').classList.toggle('open');
+    })
+</script>
