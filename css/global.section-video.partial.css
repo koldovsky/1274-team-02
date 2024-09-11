@@ -10,16 +10,20 @@
 .video_content-box {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 .video__container {
-    width: 600px;
+    max-width: 600px;
     height: auto;
     border-radius: inherit;
+    margin: auto;
 }
 
+.video__player {
+    margin: auto;
+}
 .video__image {
     max-width: 80%;
+    margin: auto;
 }
 
 @media (max-width: 400px) {
@@ -67,6 +71,7 @@
     flex-direction: row;
     width: 300px;
     height: 500px;
+    margin: auto;
     
 }
 
@@ -109,4 +114,5 @@
     height: 50px;
     border-radius: 25px;
     background-color: blue;
+    padding: 10px 15px;
 }
