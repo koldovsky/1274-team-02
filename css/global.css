@@ -23,9 +23,7 @@
 
 img {
     display: block;
-<<<<<<< HEAD
     width: 100%;
-=======
     max-width: 100%;
 }
 
@@ -33,5 +31,4 @@ img {
     max-width: 1200px;
     padding: 15px;
     margin: auto;
->>>>>>> a1d1d6252ea6d601b6f09110cd17528f2188fb3a
 }

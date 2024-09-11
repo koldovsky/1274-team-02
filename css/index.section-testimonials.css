@@ -81,7 +81,10 @@
     display: flex;
     justify-content: center;
 }
-
+.testimonials__header-text{
+    display: flex;
+    justify-content: center;
+}
 .testimonials__container{
     padding: 0 24px;
 }
