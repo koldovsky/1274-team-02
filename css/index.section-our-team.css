@@ -1,8 +1,14 @@
+.our-team {
+  background-image: url(../img/team-profiles/bg-our-team.png);
+}
 .our-team__title {
-    font-family: "Fredoka", sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: white;
   font-size: 56px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
   line-height: 1;
+}
+.our-team__container-points {
+}
