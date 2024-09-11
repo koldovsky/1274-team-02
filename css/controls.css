@@ -6,7 +6,7 @@
     font-weight: 700;
     color: white;
     background: var(--button-color);
-    padding: 22px 51px;
+    padding: 20px 51px;
     border-radius: 20px;
     margin-top: 25px;
 }
@@ -20,7 +20,7 @@
     font-weight: 700;
     color: white;
     background: var(--dark-button-color);
-    padding: 22px 51px;
+    padding: 20px 51px;
     border-radius: 20px;
     margin-top: 25px;
 }

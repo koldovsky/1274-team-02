@@ -3,6 +3,8 @@
     background-image: url("../img/astronaut/astronaut.png");
     background-size: cover; 
     background-repeat: no-repeat; 
+    background-position: center;
+    height: 850px;
 }
 
 /* Стилі навігації */
@@ -36,20 +38,21 @@
 
 /* Стилі інформаційного блоку */
 .header__start_info {
-    padding: 120px 24px;
+    padding: 100px 24px;
 }
 .header__start_info-introduction {
-    font-size: 75px;
+    font-size: 56px;
     font-family: "Fredoka", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
     color: var(--color-main-text);
+    line-height:1;
 }
 .header__start_info-about_company {
     font-size: 20px;
-    font-family: "Fredoka", cursive;
+    font-family: "Nunito", cursive;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--color-main-text);
     margin-top: 55px;
 }
@@ -62,34 +65,58 @@ li {
 }
 
 /* Адаптивні стилі */
-@media (min-width: 760px) {
+@media (min-width: 768px) {
+
     .header__start_info {
-        width: 60%;
-        padding: 120px 55px;
+        width: 72%;
+        padding: 120px 40px 170px 40px;
     }
     .header__navigation {
-        padding: 30px 55px;
+        padding: 30px 40px;
     }
     .header__navigation-logo img {
         width: 160px;
     }
-}
-
-@media (min-width: 1200px){
-    .centering {
-        width: 1200px;
-        margin: auto;
+    .header__start_info-introduction{
+        font-size: 65px;
     }
-    .header__menu ul {
+    .header__navigation-logo img {
+        width: 130px;
+    }
+    .header__navigation-menu ul{
+        display: flex;
+        width: 568px;
+        justify-content: space-between;
+    }
+    .header__navigation-menu{
+        height: 76px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .header{
+        height: 942px;
+    }
+
+}
+@media (min-width: 1200px){
+    .header__navigation-menu ul{
         display: flex;
         width: 580px;
         justify-content: space-between;
     }
-    .header__menu {
+    .header__navigation-menu{
         display: flex;
+        height: 76px;
         justify-content: space-between;
         align-items: center;
         width: 720px;
+        flex-direction: row;
+    }
+    .centering {
+        width: 1200px;
+        margin: auto;
     }
     .header__navigation{
         padding: 30px 40px;
@@ -101,7 +128,18 @@ li {
         padding-top: 170px;
     }
     .header__start_info {
-        padding: 120px 40px;
+        padding: 170px 40px 170px 40px;
+        
+    }
+    .header__navigation-menu-media{
+        display: inline-block;
+    }
+    .header__start_info-introduction{
+        font-size: 75px;
+    }
+    .header{
+        background-position: 0% 0%;
+        height: 1110px;
     }
 }
 @media (min-width: 1500px){
@@ -109,12 +147,12 @@ li {
         width: 1400px;
         margin: auto;
     }
-    .header__menu ul {
+    .header__navigation-menu ul {
         display: flex;
         width: 580px;
         justify-content: space-between;
     }
-    .header__menu {
+    .header__navigation-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
