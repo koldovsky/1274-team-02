@@ -75,7 +75,7 @@
         gap: 10px; /* Додає відстань між елементами */
     }
     .mobile-games__item game {
-        width: 100px;
+        width: 100px; 
         height: 100px;
         background-color: lightblue;
     }
