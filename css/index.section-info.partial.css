@@ -14,10 +14,10 @@
     font-size: 56px;
     font-family: "Fredoka", cursive;
     font-weight: 400;
-    color: var(--color-main-text);
+    color:white;
     line-height: 56зч;
-    width:  auto;
-    height:  auto;
+    width: auto;
+    height: auto;
     padding-left: 50px;
     text-align: left;
     padding-top: 10px;
@@ -85,16 +85,19 @@
 .mobile-games__box {
     border: 1px solid;
     display: flex;
-    gap: 10px;
-    padding: 10px;
+    flex-direction:column;
     gap: 20px;
     background-color: #F65E74;
+    justify-content:space-around;
+
+
+    .mobile-games__item game {
+        display: flex;
+    }
 
 }
 
-.mobile-games__item game {
-    display: flex;
-}
+
 
 .item article {
     display: inline-block;
@@ -119,7 +122,7 @@
 
 .underline {
     border-bottom: 2px solid;
-    color: #ddd;
+    color: #cb616b;
     width: 20%;
 }
 
@@ -143,4 +146,9 @@
     font-weight: 600;
     font-style: normal;
 
+}
+@media (min-width:600px){
+    .mobile-games__box{
+    display: flex;
+    flex-direction:row ;}
 }
