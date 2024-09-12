@@ -60,11 +60,22 @@
         line-height: 1;
 
     }
-    .mobile-games__discription {
+    .mobile-games__description {
         color:white;
         font-weight: 700;
         line-height: 1;
         padding-bottom: 20px;
-        
-    
+    }
+    .mobile-game__image{
+        width: 70px;
+        height: 70px;
+    }
+    .mobile-games__box {
+        display: flex;
+        gap: 10px; /* Додає відстань між елементами */
+    }
+    .mobile-games__item game {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
     }
