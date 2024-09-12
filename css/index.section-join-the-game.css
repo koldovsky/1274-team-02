@@ -1,0 +1,16 @@
+.join-the-game {
+    background-image: url("../img/join-the-game/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 40px;
+}
+
+.join-the-game__title {
+    font-size: 4.6rem;
+    font-weight: bold;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+}
