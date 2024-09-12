@@ -27,6 +27,22 @@
     display: flex;
     justify-content: center;
 }
+.testimonials__header-h3,
+.testimonials__main-center-p11{
+    color: var(--color-main-text);
+    margin: auto;
+}
+
+.testimonials__main-center-p1{
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+    
+}
+.testimonials__main{
+    position: relative;
+    padding: 0 15px;
+}
 
 .testimonials__header-point{
     display: flex;
@@ -106,6 +122,10 @@
     font-size: 20px;
 }
 
+.testimonials__main-center-p11{
+    margin: 0 25px;
+}
+
 .testimonials__main-center-img,
 .testimonials__header-h{
     display: flex;
@@ -123,4 +143,43 @@
         
         font-size: 40px;
     }
+}
+
+
+.testimonials__main-arrow-left {
+    
+    display: inline-block; 
+    position: absolute;
+    top: 170px;
+    left: 20px;
+    z-index: 10;
+    width: 15px; 
+    height: 15px; 
+    border-right: 2px solid black; 
+    border-bottom: 2px solid black;
+    transform: rotate(135deg);
+    
+    cursor: pointer;
+    color: var(--color-main-text);
+    background-color: #af3c6d;
+  }
+  .testimonials__main-arrow-right {
+    display: inline-block;
+    position: absolute;
+    top: 160px;
+    right: 20px;
+    z-index: 10;
+    border: none;
+    display: inline-block;
+    width: 15px;  
+    height: 15px; 
+    border-right: 2px solid black; 
+    border-bottom: 2px solid black;
+    transform: rotate(45deg); 
+    transform: rotate(135deg);
+    transform: rotate(-45deg);
+    cursor: pointer;
+    color: var(--color-main-text);
+    background-color: #af3c6d;
+    z-index: 10;
 }
