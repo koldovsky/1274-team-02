@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .part {
     background-image: url("../img/astronaut/astronaut.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    height: 450px;
-    width: 100%;
+    height: auto;
+    width: auto;
+    display: flex;
 }
 
 .part__title {
-    font-size: 80px;
+    font-size: 56px;
     font-family: "Fredoka", cursive;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--color-main-text);
-    line-height: 1;
-    width: 70%;
+    line-height: 56зч;
+    width:  auto;
+    height:  auto;
     padding-left: 50px;
     text-align: left;
     padding-top: 10px;
@@ -61,9 +65,17 @@
     line-height: 1;
 
 }
-.mobile-games__description{
-    color:white;
+
+.mobile-games__description {
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+
 }
+
 .mobile-games__image {
     width: 70px;
     height: 70px;
@@ -71,40 +83,64 @@
 }
 
 .mobile-games__box {
-    border: 1px solid ;
+    border: 1px solid;
     display: flex;
     gap: 10px;
     padding: 10px;
     gap: 20px;
     background-color: #F65E74;
+
 }
-.mobile-games__item game{
-    display:flex;
+
+.mobile-games__item game {
+    display: flex;
 }
-.item article{
+
+.item article {
     display: inline-block;
-    font-family: cursive;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-weight: 800;
+
 }
 
 .game__title {
     font-size: 22px;
     text-align: left;
     color: white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
 }
 
 .underline {
-    border-bottom: 2px solid; color: #ddd;
+    border-bottom: 2px solid;
+    color: #ddd;
     width: 20%;
 }
 
 .game__price {
     font-size: 20px;
-    color:  #F9BA38;
+    color: #F9BA38;
     text-align: end;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
 }
 
 .game__description {
     margin-top: 10px;
     font-size: 16px;
-    color:white;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
 }
