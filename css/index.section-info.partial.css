@@ -42,40 +42,69 @@
 .mobile-games {
     background-color: #6c3064;
     text-align: center;
+    display: grid;
 }
 
-    .mobile-games__title {
-        font-size: 40px;
-        font-family: "Fredoka", cursive;
-        font-weight: 700;
-        color:white;
-        line-height: 1;
-        padding-top: 20px;
-    }
+.mobile-games__title {
+    font-size: 40px;
+    font-family: "Fredoka", cursive;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    padding-top: 20px;
+}
 
-    .mobile-games__p {
-        color: #F9BA38;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 1;
+.mobile-games__p {
+    color: #F9BA38;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
 
-    }
-    .mobile-games__description {
-        color:white;
-        font-weight: 700;
-        line-height: 1;
-        padding-bottom: 20px;
-    }
-    .mobile-game__image{
-        width: 70px;
-        height: 70px;
-    }
-    .mobile-games__box {
-        display: flex;
-        gap: 10px; /* Додає відстань між елементами */
-    }
-    .mobile-games__item game {
-        width: 100px; 
-        height: 100px;
-        background-color: lightblue;
-    }
+}
+.mobile-games__description{
+    color:white;
+}
+.mobile-games__image {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.mobile-games__box {
+    border: 1px solid ;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    gap: 20px;
+    background-color: #F65E74;
+}
+.mobile-games__item game{
+    display:flex;
+}
+.item article{
+    display: inline-block;
+    font-family: cursive;
+}
+
+.game__title {
+    font-size: 22px;
+    text-align: left;
+    color: white;
+}
+
+.underline {
+    border-bottom: 2px solid; color: #ddd;
+    width: 20%;
+}
+
+.game__price {
+    font-size: 20px;
+    color:  #F9BA38;
+    text-align: end;
+}
+
+.game__description {
+    margin-top: 10px;
+    font-size: 16px;
+    color:white;
+}
