@@ -24,6 +24,7 @@
     --button-color:#19ca6d;
     --title-top-game-color: #19ca6d;
     --dark-button-color:rgb(20, 168, 91);
+    --bacground-when-button-active:#1d4759;
     scroll-behavior: smooth;
 }
 

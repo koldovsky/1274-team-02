@@ -6,7 +6,6 @@
     background-position: center;
     height: 850px;
 }
-
 /* Стилі навігації */
 .header__navigation {
     padding: 30px 24px;
@@ -16,16 +15,21 @@
 .header__navigation-logo img {
     width: 130px;
 }
+.header__navigation-logo{
+    width: 130px;
+    z-index: 50;
+}
 .header__navigation-menu-media {
     display: inline-block;
 }
 .header__navigation-menu{
     display: none;
 }
-.header .header__navigation-menu-link {
+.header__navigation-menu-link {
+    position: relative;
     text-decoration: none;
     color: var(--menu-color);
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     overflow: hidden;
     white-space: nowrap;
@@ -34,6 +38,28 @@
     font-weight: 700;
     font-style: normal;
 }
+
+.header__navigation-menu-link:hover {
+    text-decoration: none;
+    color: var(--color-main-text);
+    top: 0;
+}
+
+.header__navigation-menu-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Спочатку лінія має нульову ширину */
+    height: 2px;
+    background-color: var(--color-main-text);
+    transition: width 0.3s ease; 
+}
+
+.header__navigation-menu-link:hover::after {
+    width: 35px; 
+}
+
 
 .header .header__navigation-menu-link span {
     margin-right: 5px;
@@ -108,6 +134,20 @@ li {
     bottom: 50%;
     transform: rotate(45deg) translate(0, 50%);
 }
+.button_open{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bacground-when-button-active);
+    flex-direction: column;
+}
+.dont_scrol{
+    overflow: visible;
+}
+
 /* Адаптивні стилі */
 @media (min-width: 768px) {
 
@@ -132,7 +172,27 @@ li {
     }
 
 }
+@media (max-width: 990px){
+    .header__navigation-menu-link{
+        position: relative;
+        top: 140px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .header__navigation-menu-media{
+        position: relative;
+        top: 140px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .dont_scrol{
+        overflow: hidden;
+    }
+}
 @media (min-width: 990px){
+    .header__navigation-menu-link{
+        font-size: 16px;
+    }
     .header__navigation-drop_down_menu{
         display: none;
     }
@@ -148,6 +208,17 @@ li {
         flex-direction: column;
         align-items: flex-end;
     }
+    .header__navigation-menu-media{
+        margin-top: 20px;
+    }
+    .button_open{
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+    
 }
 @media (min-width: 1200px){
     .header__navigation-menu ul{
@@ -181,6 +252,7 @@ li {
         
     }
     .header__navigation-menu-media{
+        margin: 0;
         display: inline-block;
     }
     .header__start_info-introduction{

@@ -1,19 +1,19 @@
 .lets-create {
-    background-image: url("../img/lets-create/backlets.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 110px 0;
+  background-image: url("../img/lets-create/backlets.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
 }
 
 .lets-create__dot-group {
-    color: #f8ba39;
-    font-weight: auto;
+  color: #f8ba39;
+  font-weight: auto;
   text-align: center;
 }
 
 .lets-create__title {
-    font-family: "Fredoka", sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: white;
   font-size: 56px;
   font-weight: bold;
@@ -22,34 +22,41 @@
   line-height: 1;
 }
 
-.lets-create__text--primary {
-    font-family: "Fredoka", sans-serif;
+.lets-create__description {
+  font-family: "Fredoka", sans-serif;
   color: white;
   font-size: 18px;
   text-align: center;
 }
 
 .lets-create__button--contact {
-    font-size: 14px;
-    color: white;
-    padding: 5px 15px;
-    background-color: #f8ba39;
-    border-radius: 12px;
-    border: none;
-  }
-  
-  .time-flies__button--learn-more:hover {
-    cursor: pointer;
-  }
+  font-size: 14px;
+  color: white;
+  padding: 15px 50px;
+  background-color: #f8ba39;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+}
 
-  .lets-create__actions {
-    font-family: "Fredoka", sans-serif;
-  }
+.time-flies__button--learn-more:hover {
+  cursor: pointer;
+}
 
-  .container {
-    display: flex;
-    justify-content: center; /* Вирівнювання по горизонталі */
-    align-items: center; /* Вирівнювання по вертикалі */
-    flex-direction: column; /* Елементи у стовпчик */
-    text-align: center; /* Текст по центру */
-  }
+.lets-create__actions {
+  font-family: "Fredoka", sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.lets-create__text--primary,
+.lets-create__text--secondary {
+  text-align: center;
+  display: block;
+  margin: 0;
+}
