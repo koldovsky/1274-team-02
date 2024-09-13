@@ -53,7 +53,7 @@
   background-color: var(--border-top-games-color);
   flex-direction: column;
   margin-left: 20px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .top-games__carousel-games-inner-slide-container {
