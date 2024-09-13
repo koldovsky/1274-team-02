@@ -42,34 +42,171 @@
   text-align: center;
 }
 
-.top-games__carousel-games-inner{
-    padding: 15px;
+.top-games__carousel-games-inner {
+  padding: 15px;
 }
 .top-games__carousel-games-inner-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: var(--border-top-games-color);
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--border-top-games-color);
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
-.top-games__carousel-games-inner-slide-container
-{
-    padding: 43px;
+.top-games__carousel-games-inner-slide-container {
+  padding: 43px;
 }
 .top-games__carousel-games-inner-slide-title {
-    font-family: "Nunito", sans-serif;
-    color: var(--title-top-game-color);
-    font-size: 28px;
-    margin-bottom: 0px;
-    font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  color: var(--title-top-game-color);
+  font-size: 28px;
+  margin-bottom: 0px;
+  font-weight: 800;
 }
 
 .top-games__carousel-games-inner-slide-subtitle {
-    font-family: "Nunito", sans-serif;
-    color: #c4cdd6;
-    font-size: 16px;
-    font-weight: 600;
-    font-style: italic;
+  font-family: "Nunito", sans-serif;
+  color: var(--subtitle-top-game-color);
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 30px;
+}
+.top-games__carousel-games-inner-slide-text {
+  font-family: "Nunito", sans-serif;
+  color: var(--color-main-text);
+  font-size: 18px;
+  font-weight: 400;
+}
+.top-games__slide-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  font-family: "Nunito", sans-serif;
+}
+
+.top-games__slide-details-icon {
+  grid-column: 1;
+  width: 20px;
+  height: 24px;
+  color: var(--color-accent);
+}
+
+.top-games__slide-details-icon,
+.top-games__slide-details-item {
+  display: flex;
+  align-items: center;
+}
+.top-games__slide-details-item {
+  grid-column: 2;
+  color: var(--subtitle-top-game-color);
+  font-size: 16px;
+}
+
+.top-games__slide-details-label {
+  color: var(--color-main-text);
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+.top-games__download {
+  margin-top: 20px;
+}
+
+.top-games__download-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-main-text);
+}
+
+.top-games__download-links {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.top-games__download-link {
+  width: 120px;
+  height: auto;
+  border: 0.5px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 0 0.5px white;
+}
+.top-games__carousel-games-button-left,
+.top-games__carousel-games-button-right {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-main-text);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-games__carousel-games-button-left-small-arrow-svg,
+.top-games__carousel-games-button-right-small-arrow-svg {
+  width: 12px;
+  height: 12px;
+}
+
+.top-games__carousel-games {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-games__carousel-games-content {
+  flex: 1;
+  width: 100%;
+}
+
+.top-games__carousel-games-dots {
+  position: absolute;
+  bottom: -30px; /* Регулюйте це значення для точного позиціонування */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Відстань між точками */
+}
+
+.top-games__carousel-games-dot-1,
+.top-games__carousel-games-dot-2,
+.top-games__carousel-games-dot-3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-main-text);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.top-games__carousel-games-button-left,
+.top-games__carousel-games-button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-main-text);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.top-games__carousel-games-button-left {
+  left: 10px; /* Змініть це значення */
+}
+
+.top-games__carousel-games-button-right {
+  right: 10px; /* Змініть це значення */
 }
