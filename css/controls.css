@@ -4,7 +4,7 @@
     font-family: "Fredoka", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
-    color: white;
+    color: var(--color-main-text);
     background: var(--button-color);
     padding: 20px 51px;
     border-radius: 20px;
@@ -18,7 +18,7 @@
     font-family: "Fredoka", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
-    color: white;
+    color: var(--color-main-text);
     background: var(--dark-button-color);
     padding: 20px 51px;
     border-radius: 20px;
