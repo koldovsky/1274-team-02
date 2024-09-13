@@ -26,6 +26,7 @@
     display: none;
 }
 .header__navigation-menu-link {
+    position: relative;
     text-decoration: none;
     color: var(--menu-color);
     font-size: 18px;
@@ -37,6 +38,28 @@
     font-weight: 700;
     font-style: normal;
 }
+
+.header__navigation-menu-link:hover {
+    text-decoration: none;
+    color: var(--color-main-text);
+    top: 0;
+}
+
+.header__navigation-menu-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Спочатку лінія має нульову ширину */
+    height: 2px;
+    background-color: var(--color-main-text);
+    transition: width 0.3s ease; 
+}
+
+.header__navigation-menu-link:hover::after {
+    width: 35px; 
+}
+
 
 .header .header__navigation-menu-link span {
     margin-right: 5px;
