@@ -12,15 +12,17 @@
 
 :root {
     --ui-brand-color: #f9ba38;
-    --collor-accent: rgb(249, 186, 56);
+    --color-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
     --text-color: black;
     --border-color: black;
     --accent-color:#824b4e;
+    --border-top-games-color: #14385d;
     --color-icons:rgb(218,50,101);
     --menu-color:rgba(255, 255, 255, 0.73);
     --color-background-card: rgb(14, 49, 84);
     --button-color:#19ca6d;
+    --title-top-game-color: #19ca6d;
     --dark-button-color:rgb(20, 168, 91);
     scroll-behavior: smooth;
 }
