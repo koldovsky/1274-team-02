@@ -167,12 +167,12 @@
 
 .top-games__carousel-games-dots {
   position: absolute;
-  bottom: -30px; /* Регулюйте це значення для точного позиціонування */
+  bottom: -60px;
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
-  gap: 10px; /* Відстань між точками */
+  gap: 14px;
 }
 
 .top-games__carousel-games-dot-1,
@@ -185,8 +185,12 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  opacity: 0.5;
 }
 
+.top-games__carousel-games-dot-1 {
+  opacity: 1;
+}
 .top-games__carousel-games-button-left,
 .top-games__carousel-games-button-right {
   position: absolute;
@@ -204,9 +208,9 @@
 }
 
 .top-games__carousel-games-button-left {
-  left: 10px; /* Змініть це значення */
+  left: 10px;
 }
 
 .top-games__carousel-games-button-right {
-  right: 10px; /* Змініть це значення */
+  right: 10px;
 }
