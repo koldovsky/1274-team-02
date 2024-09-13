@@ -38,33 +38,21 @@
     font-weight: 700;
     font-style: normal;
 }
-
-.header__navigation-menu-link:hover {
+.header__navigation-menu-link:hover{
     text-decoration: none;
-    color: var(--color-main-text);
-    top: 0;
+    color:var(--color-main-text)
 }
-
-.header__navigation-menu-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0; /* Спочатку лінія має нульову ширину */
-    height: 2px;
-    background-color: var(--color-main-text);
-    transition: width 0.3s ease; 
-}
-
-.header__navigation-menu-link:hover::after {
-    width: 35px; 
-}
-
-
 .header .header__navigation-menu-link span {
     margin-right: 5px;
 }
 
+a.header__menu-media_force:hover .outer_bDW {
+    fill: var(--dark-orange-for-button); /* Темніший колір для фону */
+}
+
+a.header__navigation-menu-media_force:hover path.outer_bDW {
+    fill: var(--dark-orange-for-button); /* Темніший колір для символу */
+}
 /* Стилі інформаційного блоку */
 .header__start_info {
     padding: 100px 24px;
@@ -86,12 +74,6 @@
     margin-top: 55px;
 }
 /* Стилі списків */
-ul {
-    margin: 0;
-}
-li {
-    list-style-type: none;
-}
 .header__navigation-drop_down_menu{
     display: flex;
     position: relative;
@@ -158,9 +140,6 @@ li {
     .header__navigation {
         padding: 30px 40px;
     }
-    .header__navigation-logo img {
-        width: 160px;
-    }
     .header__start_info-introduction{
         font-size: 65px;
     }
@@ -218,6 +197,26 @@ li {
         height: 100%;
         background: none;
     }
+    .header__navigation-menu-link:hover {
+        text-decoration: none;
+        color: var(--color-main-text);
+        top: 0;
+    }
+    
+    .header__navigation-menu-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0; /* Спочатку лінія має нульову ширину */
+        height: 2px;
+        background-color: var(--color-main-text);
+        transition: width 0.3s ease; 
+    }
+    
+    .header__navigation-menu-link:hover::after {
+        width: 35px; 
+    }
     
 }
 @media (min-width: 1200px){
@@ -267,25 +266,5 @@ li {
     .centering {
         width: 1400px;
         margin: auto;
-    }
-    .header__navigation-menu ul {
-        display: flex;
-        width: 580px;
-        justify-content: space-between;
-    }
-    .header__navigation-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 720px;
-    }
-    .header__navigation{
-        padding: 30px 15px;
-    }
-    .header__start_info-introduction, .header__start_info-about_company {
-        width: 50%;
-    }
-    .header__start_info{
-        padding: 120px 40px;
     }
 }

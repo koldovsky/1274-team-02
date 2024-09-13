@@ -24,6 +24,7 @@
     --button-color:#19ca6d;
     --title-top-game-color: #19ca6d;
     --dark-button-color:rgb(20, 168, 91);
+    --dark-orange-for-button:#f9ba38;
     --bacground-when-button-active:#1d4759;
     scroll-behavior: smooth;
 }
@@ -38,4 +39,11 @@ img {
     max-width: 1200px;
     padding: 15px;
     margin: auto;
+}
+
+ul {
+    margin: 0;
+}
+li {
+    list-style-type: none;
 }
