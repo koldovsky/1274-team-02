@@ -22,6 +22,7 @@
     --color-background-card: rgb(14, 49, 84);
     --button-color:#19ca6d;
     --dark-button-color:rgb(20, 168, 91);
+    --bacground-when-button-active:#1d4759;
     scroll-behavior: smooth;
 }
 
