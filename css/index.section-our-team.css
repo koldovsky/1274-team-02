@@ -78,3 +78,19 @@
   fill: white;
   opacity: 0.75;
 }*/
+
+@media (min-width: 600px) {
+  .our-team__carousel-profiles-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+  }
+}
+@media (min-width: 900px) {
+  .our-team__carousel-profiles-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
