@@ -3,15 +3,49 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.join-the-game__container {
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .join-the-game__title {
-    font-size: 4.6rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: white;
     font-family: "Fredoka", sans-serif;
+    text-align: center;
+}
+
+.join-the-game__point {
+    text-align: center;
+    color: #fc4a62;
+}
+
+.join-the-game__subtitle {
+    font-family: "Fredoka", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.join-the-game__form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+
+    .join-the-game__title {
+        font-size: 65px;
+    }
+
+    .join-the-game__container {
+        width: 50%;
+    }
+    
 }
