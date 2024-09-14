@@ -56,37 +56,6 @@
   padding: 12px 15px;
 }
 
-.our-team__carousel-button-left-small-arrow-svg,
-.our-team__carousel-button-right-small-arrow-svg {
-  width: 12px;
-  height: 12px;
-}
-
-.our-team__carousel-button-left,
-.our-team__carousel-button-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: var(--color-main-text);
-  opacity: 0.75;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-
-.our-team__carousel-button-left {
-  left: 10px;
-}
-
-.our-team__carousel-button-right {
-  right: 10px;
-}
-
 .our-team__profile-name {
   font-family: "Fredoka", sans-serif;
   color: rgb(255, 255, 255);
@@ -114,16 +83,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 30px;
   }
-  .our-team__carousel-button-left-small-arrow-svg,
-  .our-team__carousel-button-right-small-arrow-svg {
-    width: 20px;
-    height: 20px;
-  }
-  .our-team__carousel-button-left,
-  .our-team__carousel-button-right {
-    width: 32px;
-    height: 32px;
-  }
 }
 
 @media (min-width: 900px) {
@@ -132,11 +91,5 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-  }
-  .our-team__carousel-button-left {
-    left: 350px;
-  }
-  .our-team__carousel-button-right {
-    right: 350px;
   }
 }
