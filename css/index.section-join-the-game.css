@@ -63,7 +63,7 @@
 }
 
 .join-the-game__submit:hover {
-  background-color: var(--buttom-submit-hover);
+  background-color: var(--button-submit-hover);
 }
 
 @media (min-width: 768px) {
