@@ -23,7 +23,7 @@
 
 .join-the-game__point {
   text-align: center;
-  color: #fc4a62;
+  color: var(--color-icons);
   font-size: 20px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .join-the-game__submit:hover {
-  background-color: #c1305c;
+  background-color: var(--buttom-submit-hover);
 }
 
 @media (min-width: 768px) {
