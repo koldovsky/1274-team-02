@@ -15,7 +15,7 @@
             <div class="header__navigation-menu-media">
                 <a href="#" class="header__menu-media_force" style="text-decoration: none;">
                     <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="32" height="32" rx="5" ry="5" fill="#F9C446"></rect>
+                        <rect class="outer_bDW" width="32" height="32" rx="5" ry="5" fill="#F9C446"></rect>
                         <path d="M13.6383065,25 L16.9133212,25 L16.9133212,16.0044 L19.3701815,16.0044 L19.8560792,13.1936 L16.9133212,13.1936 L16.9133212,11.1568001 C16.9133212,10.5002 17.3378823,9.81079996 17.944655,9.81079996 L19.6171262,9.81079996 L19.6171262,7 L17.567445,7 L17.567445,7.0126 C14.3603601,7.129 13.7014413,8.98640001 13.6443004,10.9374 L13.6383065,10.9374 L13.6383065,13.1936 L12,13.1936 L12,16.0044 L13.6383065,16.0044 L13.6383065,25 Z" fill="#D28C2F"></path>
                     </svg>
                 </a>
@@ -46,6 +46,7 @@
 <script>
     document.querySelector('.header__navigation-drop_down_menu').addEventListener('click', function() {
         this.classList.toggle('active');
-        document.querySelector('.nav').classList.toggle('open');
+        document.querySelector('.header__navigation-menu').classList.toggle('button_open');
+        document.querySelector('body').classList.toggle('dont_scrol');
     })
 </script>
