@@ -3,7 +3,7 @@
 .most-popular-game {
     background-image: url(../img/most-popular-games/background_most_popular_games.png);
     background-size: cover;
-    color: white;
+    color: var(--color-main-text);
     padding-top: 90px;
     padding-bottom: 80px;
     padding-left: 23px;
@@ -27,7 +27,8 @@ h3 {
     text-align: center;
     font-family: "Fredoka One", sans-serif;
     font-size: 30px;
-    color: #f9ba38;
+    color: var(--ui-brand-color);
+    /* color: #f9ba38; */
 }
 
 .most-popular-game-text-explain {
@@ -103,7 +104,7 @@ h3 {
 .most-popular-game-nintendo-witch-school-price,
 .most-popular-game-nintendo-to-the-moon-price {
     width: 39.6px;
-    color: #f9ba38;
+    color: var(--ui-brand-color);
 }
 
 .most-popular-game-xbox-dark-matter-game-title-text,
@@ -118,7 +119,7 @@ h3 {
     margin: 0px;
     font-family: "Nunito", sans-serif;
     font-size: 16px;
-    color: #ffffffbf;
+    color: var(--menu-color);
 }
 
 .most-popular-game-xbox-dark-matter-game-details,
