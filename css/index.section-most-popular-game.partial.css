@@ -22,6 +22,15 @@ h3 {
     font-weight: bold;
 }
 
+.underline {
+    flex: 1 1;
+    border-bottom: 1px solid;
+    color: var(--accent-color);
+    min-width: 10px;
+    width: 100%;
+    margin: 7px;
+}
+
 .most-popular-game-points {
     margin-bottom: 0px;
     text-align: center;
@@ -92,12 +101,6 @@ h3 {
     font-weight: bold;
     font-size: 22px;
     margin: 0px;
-}
-
-.underline {
-    border-bottom: 2px solid;
-    color: #cb616b;
-    width: 30%;
 }
 
 .most-popular-game-xbox-dark-matter-game-price,
