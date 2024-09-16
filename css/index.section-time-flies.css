@@ -8,7 +8,7 @@
 
 .time-flies__title {
   font-family: "Fredoka", sans-serif;
-  color: white;
+  color: var(--color-white);
   font-size: 56px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -18,39 +18,40 @@
 .time-flies__title--secondary {
   font-family: "Fredoka", sans-serif;
   font-size: 56px;
-  color: #f8ba39;
+  color: var(--color-yellow);
   font-weight: bold;
 }
 
 .time-flies__text--primary {
   font-family: "Fredoka", sans-serif;
-  color: white;
+  color: var(--color-white);
   font-size: 20px;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
   line-height: 1.5;
   max-width: 800px;
 }
 
 .time-flies__text--secondary {
   font-family: "Fredoka", sans-serif;
-  color: white;
+  color: var(--color-white);
   font-size: 18px;
 }
 
 .time-flies__dots-group {
-  color: white;
+  color: var(--color-white);
   font-weight: auto;
 }
 
 .time-flies__button--learn-more {
   font-family: "Fredoka", sans-serif;
   font-size: 14px;
-  color: white;
+  color: var(--color-white);
   display: inline-block;
-  padding: 5px 15px;
+  padding: 15px 50px;
   text-decoration: none;
-  background-color: #f8ba39;
-  border-radius: 12px;
+  background-color: var(--color-yellow);
+  border-radius: 20px;
+  font-weight: bold;
   border: none;
 }
 
@@ -70,9 +71,13 @@
 }
 
 .container {
-  display: flex;
-    justify-content: left; 
-    align-items: left; 
-    flex-direction: column; 
-    text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.general {
+  width: 40%;
+  margin-left: 10%;
 }

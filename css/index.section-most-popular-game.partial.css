@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka One');
+
+.most-popular-game {
+    background-image: url(../img/most-popular-games/background_most_popular_games.png);
+    background-size: cover;
+    color: var(--color-main-text);
+    padding-top: 90px;
+    padding-bottom: 80px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Fredoka One", sans-serif;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.underline {
+    flex: 1 1;
+    border-bottom: 1px solid;
+    color: var(--accent-color);
+    min-width: 10px;
+    width: 100%;
+    margin: 7px;
+}
+
+.most-popular-game-points {
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: "Fredoka One", sans-serif;
+    font-size: 30px;
+    color: var(--ui-brand-color);
+    /* color: #f9ba38; */
+}
+
+.most-popular-game-text-explain {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+.most-popular-game-xbox-title,
+.most-popular-game-ios-android-title,
+.most-popular-game-nintendo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.most-popular-game-xbox-dark-matter,
+.most-popular-game-xbox-fishing-day,
+.most-popular-game-xbox-aliens-guest,
+.most-popular-game-ios-android-atlantis-ruins,
+.most-popular-game-ios-android-feed-the-fox,
+.most-popular-game-ios-android-shamans-jungle,
+.most-popular-game-nintendo-creepy-maid,
+.most-popular-game-nintendo-witch-school,
+.most-popular-game-nintendo-to-the-moon {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 70px [col2-start] auto [col3-start] auto [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+}
+
+.most-popular-game-xbox-dark-matter-image,
+.most-popular-game-xbox-fishing-day-image,
+.most-popular-game-xbox-aliens-guest-image,
+.most-popular-game-ios-android-atlantis-ruins-image,
+.most-popular-game-ios-android-feed-the-fox-image,
+.most-popular-game-ios-android-shamans-jungle-image,
+.most-popular-game-nintendo-creepy-maid-image,
+.most-popular-game-nintendo-witch-school-image,
+.most-popular-game-nintendo-to-the-moon-image {
+    grid-column: col1-start;
+    grid-row: row1-start / row2-end;
+    width: 70px;
+}
+
+.most-popular-game-xbox-dark-matter-game-title,
+.most-popular-game-xbox-fishing-day-game-title,
+.most-popular-game-xbox-aliens-guest-game-title,
+.most-popular-game-ios-android-atlantis-ruins-title,
+.most-popular-game-ios-android-feed-the-fox-title,
+.most-popular-game-ios-android-shamans-jungle-title,
+.most-popular-game-nintendo-creepy-maid-title,
+.most-popular-game-nintendo-witch-school-title,
+.most-popular-game-nintendo-to-the-moon-title {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.most-popular-game-xbox-dark-matter-game-price,
+.most-popular-game-xbox-fishing-day-game-price,
+.ost-popular-game-xbox-dark-matter-game-price,
+.most-popular-game-ios-android-atlantis-ruins-price,
+.most-popular-game-ios-android-feed-the-fox-price,
+.most-popular-game-ios-android-shamans-jungle-price,
+.most-popular-game-nintendo-creepy-maid-price,
+.most-popular-game-nintendo-witch-school-price,
+.most-popular-game-nintendo-to-the-moon-price {
+    width: 39.6px;
+    color: var(--ui-brand-color);
+}
+
+.most-popular-game-xbox-dark-matter-game-title-text,
+.most-popular-game-xbox-fishing-day-game-title-text,
+.most-popular-game-xbox-aliens-guest-game-title-text,
+.most-popular-game-ios-android-atlantis-ruins-title-text,
+.most-popular-game-ios-android-feed-the-fox-details-text,
+.most-popular-game-nintendo-creepy-maid-details-text,
+.most-popular-game-nintendo-to-the-moon-details-text,
+.most-popular-game-nintendo-witch-school-details-text,
+.most-popular-game-ios-android-feed-the-fox-details-text {
+    margin: 0px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: var(--menu-color);
+}
+
+.most-popular-game-xbox-dark-matter-game-details,
+.most-popular-game-xbox-fishing-day-game-details,
+.most-popular-game-xbox-aliens-guest-game-details,
+.most-popular-game-ios-android-atlantis-ruins-details,
+.most-popular-game-ios-android-feed-the-fox-details,
+.most-popular-game-nintendo-creepy-maid-details,
+.most-popular-game-nintendo-witch-school-details,
+.most-popular-game-nintendo-to-the-moon-details,
+.most-popular-game-ios-android-feed-the-fox-details {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.most-popular-game-pages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+
+.most-popular-game-xbox,
+.most-popular-game-ios-android,
+.most-popular-game-nintendo {
+    padding: 16px;
+    box-sizing: border-box;
+    flex: 1 1 calc(33.333% - 32px);
+}
+
+@media (max-width: 768px) {
+
+    .most-popular-game-xbox,
+    .most-popular-game-ios-android,
+    .most-popular-game-nintendo {
+        flex: 1 1 100%;
+    }
+}

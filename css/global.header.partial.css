@@ -6,7 +6,6 @@
     background-position: center;
     height: 850px;
 }
-
 /* Стилі навігації */
 .header__navigation {
     padding: 30px 24px;
@@ -16,13 +15,21 @@
 .header__navigation-logo img {
     width: 130px;
 }
+.header__navigation-logo{
+    width: 130px;
+    z-index: 50;
+}
 .header__navigation-menu-media {
     display: inline-block;
 }
-.header .header__navigation-menu-link {
+.header__navigation-menu{
+    display: none;
+}
+.header__navigation-menu-link {
+    position: relative;
     text-decoration: none;
     color: var(--menu-color);
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     overflow: hidden;
     white-space: nowrap;
@@ -31,11 +38,21 @@
     font-weight: 700;
     font-style: normal;
 }
-
+.header__navigation-menu-link:hover{
+    text-decoration: none;
+    color:var(--color-main-text)
+}
 .header .header__navigation-menu-link span {
     margin-right: 5px;
 }
 
+a.header__menu-media_force:hover .outer_bDW {
+    fill: var(--dark-orange-for-button); /* Темніший колір для фону */
+}
+
+a.header__navigation-menu-media_force:hover path.outer_bDW {
+    fill: var(--dark-orange-for-button); /* Темніший колір для символу */
+}
 /* Стилі інформаційного блоку */
 .header__start_info {
     padding: 100px 24px;
@@ -57,13 +74,65 @@
     margin-top: 55px;
 }
 /* Стилі списків */
-ul {
-    margin: 0;
+.header__navigation-drop_down_menu{
+    display: flex;
+    position: relative;
+    z-index: 50;
+    top:35px;
+    right: 18px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 24px;
+    height: 16px;
 }
-li {
-    list-style-type: none;
+.header__navigation-drop_down_menu span{
+    height: 2px;
+    width: 100%;
+    transform:scale(1);
+    background-color: var(--color-main-text);
+}
+.header__navigation-drop_down_menu::before, .header__navigation-drop_down_menu::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-main-text);
+    transition: all 0.3s ease 0s;
+}
+.header__navigation-drop_down_menu::before{
+    top: 0;
+}
+.header__navigation-drop_down_menu::after{
+    bottom: 0;
+}
+.header__navigation-drop_down_menu.active span{
+    transform: scale(0);
+}
+.header__navigation-drop_down_menu.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+.header__navigation-drop_down_menu.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+.button_open{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bacground-when-button-active);
+    flex-direction: column;
 }
 
+.button-name-learn-more{
+    background-color: var(--button-color);
+}
+.button-name-learn-more:hover{
+    background-color: var(--dark-button-color);
+}
 /* Адаптивні стилі */
 @media (min-width: 768px) {
 
@@ -74,14 +143,40 @@ li {
     .header__navigation {
         padding: 30px 40px;
     }
-    .header__navigation-logo img {
-        width: 160px;
-    }
     .header__start_info-introduction{
         font-size: 65px;
     }
     .header__navigation-logo img {
         width: 130px;
+    }
+    .header{
+        height: 942px;
+    }
+
+}
+@media (max-width: 990px){
+    .header__navigation-menu-link{
+        position: relative;
+        top: 140px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .header__navigation-menu-media{
+        position: relative;
+        top: 140px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .dont_scrol{
+        overflow: hidden;
+    }
+}
+@media (min-width: 990px){
+    .header__navigation-menu-link{
+        font-size: 16px;
+    }
+    .header__navigation-drop_down_menu{
+        display: none;
     }
     .header__navigation-menu ul{
         display: flex;
@@ -95,10 +190,37 @@ li {
         flex-direction: column;
         align-items: flex-end;
     }
-    .header{
-        height: 942px;
+    .header__navigation-menu-media{
+        margin-top: 20px;
     }
-
+    .button_open{
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+    .header__navigation-menu-link:hover {
+        text-decoration: none;
+        color: var(--color-main-text);
+        top: 0;
+    }
+    
+    .header__navigation-menu-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0; /* Спочатку лінія має нульову ширину */
+        height: 2px;
+        background-color: var(--color-main-text);
+        transition: width 0.3s ease; 
+    }
+    
+    .header__navigation-menu-link:hover::after {
+        width: 35px; 
+    }
+    
 }
 @media (min-width: 1200px){
     .header__navigation-menu ul{
@@ -132,6 +254,7 @@ li {
         
     }
     .header__navigation-menu-media{
+        margin: 0;
         display: inline-block;
     }
     .header__start_info-introduction{
@@ -146,25 +269,5 @@ li {
     .centering {
         width: 1400px;
         margin: auto;
-    }
-    .header__navigation-menu ul {
-        display: flex;
-        width: 580px;
-        justify-content: space-between;
-    }
-    .header__navigation-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 720px;
-    }
-    .header__navigation{
-        padding: 30px 15px;
-    }
-    .header__start_info-introduction, .header__start_info-about_company {
-        width: 50%;
-    }
-    .header__start_info{
-        padding: 120px 40px;
     }
 }
