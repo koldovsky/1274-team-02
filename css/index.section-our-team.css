@@ -56,24 +56,6 @@
   padding: 12px 15px;
 }
 
-.our-team__carousel-team-button-left,
-.our-team__carousel-team-button-right {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: var(--color-main-text);
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.our-team__carousel-svg-button-left,
-.our-team__carousel-svg-button-right {
-  width: 24px;
-  height: 24px;
-}
-
 .our-team__profile-name {
   font-family: "Fredoka", sans-serif;
   color: rgb(255, 255, 255);
@@ -95,35 +77,44 @@
   line-height: 1;
 }
 
-.our-team__carousel-team-button-left,
-.our-team__carousel-team-button-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.75;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background-color: var(--color-main-text);
-  border: none;
+.carousel__arrow {
   display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 58%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
   align-items: center;
-  z-index: 1;
+  justify-content: center;
 }
 
-.our-team__carousel-team-button-left {
+.carousel__arrow--left {
   left: 10px;
 }
-.our-team__carousel-team-button-right {
+
+.carousel__arrow--right {
   right: 10px;
 }
-
 @media (min-width: 600px) {
   .our-team__carousel-profiles-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 30px;
+  }
+  .carousel__arrow--left {
+    left: 10px; 
+  }
+  
+  .carousel__arrow--right {
+    right: 10px;
   }
 }
 
@@ -133,5 +124,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+  }
+  .carousel__arrow--left {
+    left: 170px;
+  }
+  
+  .carousel__arrow--right {
+    right: 170px;
   }
 }
