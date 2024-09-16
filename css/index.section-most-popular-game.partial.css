@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka One');
-
 .most-popular-game {
     background-image: url(../img/most-popular-games/background_most_popular_games.png);
     background-size: cover;
@@ -10,14 +8,16 @@
     padding-right: 23px;
 }
 
-h2 {
+.most-popular-game-title {
     text-align: center;
     font-family: "Fredoka One", sans-serif;
     font-size: 40px;
     margin-bottom: 0px;
-}
+} 
 
-h3 {
+.most-popular-game-xbox-title-text,
+.most-popular-game-ios-android-title-text,
+.most-popular-game-nintendo-title-text {
     font-size: 22px;
     font-weight: bold;
 }
@@ -37,7 +37,6 @@ h3 {
     font-family: "Fredoka One", sans-serif;
     font-size: 30px;
     color: var(--ui-brand-color);
-    /* color: #f9ba38; */
 }
 
 .most-popular-game-text-explain {
