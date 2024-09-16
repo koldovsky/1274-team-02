@@ -39,7 +39,7 @@
   font-weight: 400;
   text-align: center;
   padding: 25px 0;
-  line-height: 1, 5;
+  line-height: 1.5;
 }
 
 .our-team__carousel-profiles {
@@ -54,6 +54,24 @@
 .our-team img {
   max-width: 380px;
   padding: 12px 15px;
+}
+
+.our-team__carousel-team-button-left,
+.our-team__carousel-team-button-right {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-main-text);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team__carousel-svg-button-left,
+.our-team__carousel-svg-button-right {
+  width: 24px;
+  height: 24px;
 }
 
 .our-team__profile-name {
@@ -75,6 +93,30 @@
   text-align: center;
   padding: 0 0 25px 0;
   line-height: 1;
+}
+
+.our-team__carousel-team-button-left,
+.our-team__carousel-team-button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.75;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--color-main-text);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.our-team__carousel-team-button-left {
+  left: 170px;
+}
+.our-team__carousel-team-button-right {
+  right: 170px;
 }
 
 @media (min-width: 600px) {
