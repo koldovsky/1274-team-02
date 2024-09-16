@@ -126,10 +126,13 @@ a.header__navigation-menu-media_force:hover path.outer_bDW {
     background: var(--bacground-when-button-active);
     flex-direction: column;
 }
-.dont_scrol{
-    overflow: visible;
-}
 
+.button-name-learn-more{
+    background-color: var(--button-color);
+}
+.button-name-learn-more:hover{
+    background-color: var(--dark-button-color);
+}
 /* Адаптивні стилі */
 @media (min-width: 768px) {
 
