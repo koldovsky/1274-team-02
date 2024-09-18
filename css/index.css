@@ -4,7 +4,6 @@
 @import "index.section-top-games.css";
 @import "global.section-video.partial.css";
 @import "global-footer.css";
-@import "footer-menu.css";
 @import "index.section-time-flies.css";
 @import "index.section-lets-create.css";
 @import "index.section-info.partial.css";
@@ -14,5 +13,5 @@
 @import "index.section-join-the-game.css";
 @import "carousel.css";
 @import "index.section-join-the-game.css";
+@import "index.section-most-popular-game.partial.css";
 @import "index.section-our-jorney.css";
-

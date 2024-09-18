@@ -1,54 +1,87 @@
 .join-the-game {
-    background-image: url("../img/join-the-game/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 90px 0;
-    
+  background-image: url("../img/join-the-game/background.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  padding: 100px 0;
 }
 
 .join-the-game__container {
-    padding: 0 24px;
-    max-width: 600px;
-    margin: auto;
+  padding: 0 24px;
+  max-width: 550px;
+  min-height: 500px;
+  margin: auto;
 }
 
 .join-the-game__title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: var(--color-main-text);
-    font-family: "Fredoka", sans-serif;
-    text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--color-main-text);
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
 }
 
 .join-the-game__point {
-    text-align: center;
-    color: #fc4a62;
+  text-align: center;
+  color: var(--color-icons);
+  font-size: 20px;
 }
 
 .join-the-game__subtitle {
-    font-family: "Fredoka", sans-serif;
-    text-align: center;
-    color: var(--color-main-text);
-    font-size: 20px;
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  color: var(--color-main-text);
+  font-size: 20px;
+  padding: 30px 0;
 }
 
 .join-the-game__form {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
+.join-the-game__email {
+  display: inline-block;
+  padding: 14px 48px;
+  text-align: left;
+  border-radius: 20px;
+  background-color: var(--color-main-text);
+  border: 0;
+}
 
+.join-the-game__submit {
+  margin-top: 20px;
+  background-color: var(--color-icons);
+  padding: 14px 48px;
+  border: 0;
+  display: inline-block;
+  border-radius: 20px;
+  color: var(--color-main-text);
+  font-weight: 620;
+  font-family: "Fredoka", sans-serif;
+}
+
+.join-the-game__submit:hover {
+  background-color: var(--button-submit-hover);
+}
 
 @media (min-width: 768px) {
+  .join-the-game__title {
+    font-size: 65px;
+  }
 
-    .join-the-game__title {
-        font-size: 65px;
-    }
+  .join-the-game__container {
+    width: 50%;
+  }
+}
 
-    .join-the-game__container {
-        width: 50%;
-    }
-    
+@media (min-width: 992px) {
+  .join-the-game__title {
+    font-size: 75px;
+  }
+
+  .join-the-game__point {
+    font-size: 23px;
+  }
 }

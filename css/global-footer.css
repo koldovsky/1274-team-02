@@ -5,10 +5,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 450px;
-    width: 100%; 
+    width: 100%;
     padding-top: 40px;
     background-color: var(--accent-color);
 }
+
 
 .footer__container {
     display: flex;
@@ -16,7 +17,6 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
 .footer__logo-block {
@@ -38,7 +38,7 @@
     font-size: 16px;
     line-height: 1.6;
     align-items: center;
-    color: aliceblue;
+    color: var(--color-white);
 }
 
 .footer__social-icons-list {
@@ -65,7 +65,7 @@
 }
 
 .footer__social-icons-list-item a {
-    color: #961043;
+    color: var(--icon-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,18 +75,54 @@
 
 .footer__social-icons-list-item:hover {
     text-decoration: underline;
-    background-color: #b33c5a;
+    background-color: var(--color-berry);
 }
 
-.color-icon{
-    color: #961043;
+.color-icon {
+    color: var(--icon-color);
 }
 
 .dash {
-    margin-right: 8px; 
-    color: white; 
+    margin-right: 8px;
+    color: var(--color-white);
     font-weight: bold;
-    font-size: 13px; 
+    font-size: 13px;
+}
+
+.footer__column {
+    flex: 1;
+    max-width: 250px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer__column-title {
+    color: var(--color-sunshine-yellow);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer__column-links {
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.footer__column-links-item {
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer__column-links-item a {
+    color: var(--color-white);
+}
+
+.footer__column-links-item a:hover {
+    text-decoration: underline;
+    color: var(--color-white);
 }
 
 .footer__buttom {
@@ -95,27 +131,32 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    color: aliceblue;
+    color: var(--color-white);
 }
 
 .footer__buttom-contacts a {
-    color:aliceblue;
+    color: var(--color-white);
     text-decoration: none;
 }
 
 .footer__buttom-contacts a:hover {
     text-decoration: underline;
-    color:aliceblue;
+    color: var(--color-white);
 }
 
 @media (max-width: 765px) {
-    .footer__container, .footer__buttom {
+
+    .footer__container,
+    .footer__buttom {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .footer__logo-block, .footer__social-icons-list, .footer__column, .footer__buttom-contacts {
+    .footer__logo-block,
+    .footer__social-icons-list,
+    .footer__column,
+    .footer__buttom-contacts {
         max-width: 100%;
         margin-bottom: 20px;
     }
@@ -129,10 +170,10 @@
         margin-bottom: 10px;
     }
 }
+
 @media (max-width: 765px) {
     .footer {
-        background-size: contain; /* Може краще підходити для мобільних екранів */
-        background-position: top center; /* Фіксує позицію на мобільних */
+        background-size: contain;
+        background-position: top center;
     }
 }
-

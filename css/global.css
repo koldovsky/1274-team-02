@@ -1,50 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:wght@200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:wght@200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Fredoka One');
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
     --ui-brand-color: #f9ba38;
-    --color-accent: rgb(249, 186, 56);
+    --collor-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
     --text-color: black;
     --border-color: black;
     --accent-color:#824b4e;
-    --border-top-games-color: #14385d;
     --color-icons:rgb(218,50,101);
+    --icon-color:#961043;
+    --color-berry: #b33c5a;
+    --color-white: #ffffff;
+    --color-sunshine-yellow: rgb(249, 186, 56);
     --menu-color:rgba(255, 255, 255, 0.73);
     --color-background-card: rgb(14, 49, 84);
     --button-color:#19ca6d;
+    --dark-button-color:rgb(20, 168, 91);
+    scroll-behavior: smooth;
+    --border-top-games-color: #14385d;
     --title-top-game-color: #19ca6d;
     --subtitle-top-game-color: #c4cdd6;
-    --dark-button-color:rgb(20, 168, 91);
-    --dark-orange-for-button:#f9ba38;
-    --bacground-when-button-active:#1d4759;
-    scroll-behavior: smooth;
+    --dark-orange-for-button: #f9ba38;
+    --bacground-when-button-active: #1d4759;
+    --button-submit-hover: #c1305c;
+    --color-yellow: #f8ba39;
+    --color-white: #ffffff;
 }
 
 img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 .container {
-    max-width: 1200px;
-    padding: 15px;
-    margin: auto;
+  max-width: 1200px;
+  padding: 15px;
+  margin: auto;
 }
 
 ul {
-    margin: 0;
+  margin: 0;
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }

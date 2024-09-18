@@ -7,9 +7,9 @@
         </div>
         <nav class="header__navigation-menu">
             <ul>
-                <li><a href="#" class="header__navigation-menu-link"><span>▬</span>About Us</a></li>
-                <li><a href="#" class="header__navigation-menu-link"><span>▬</span>New Mobile Games</a></li>
-                <li><a href="#" class="header__navigation-menu-link"><span>▬</span>Testimonials</a></li>
+                <li><a href="#about-us" class="header__navigation-menu-link"><span>▬</span>About Us</a></li>
+                <li><a href="#new-mobile-games" class="header__navigation-menu-link"><span>▬</span>New Mobile Games</a></li>
+                <li><a href="#testimonials" class="header__navigation-menu-link"><span>▬</span>Testimonials</a></li>
                 <li><a href="#" class="header__navigation-menu-link"><span>▬</span>Platforms</a></li>
             </ul>
             <div class="header__navigation-menu-media">
@@ -40,13 +40,12 @@
     <div class="header__start_info centering">
         <h1 class="header__start_info-introduction">We Create Innovative Games You Just Can't Stop Playing</h1>
         <p class="header__start_info-about_company">We're not just a company, we're a community of passionate gamers.</p>
-        <a href="#" class="header__start_info-learn_more button-name-learn-more">LEARN MORE</a>
+        <a href="#" class="header__start_info-learn_more button-name-learn-more button">LEARN MORE</a>
     </div>
 </header>
 <script>
     document.querySelector('.header__navigation-drop_down_menu').addEventListener('click', function() {
         this.classList.toggle('active');
         document.querySelector('.header__navigation-menu').classList.toggle('button_open');
-        document.querySelector('body').classList.toggle('dont_scrol');
     })
 </script>

@@ -7,14 +7,14 @@
 }
 
 .lets-create__dot-group {
-  color: #f8ba39;
+  color: var(--color-yellow);
   font-weight: auto;
   text-align: center;
 }
 
 .lets-create__title {
   font-family: "Fredoka", sans-serif;
-  color: white;
+  color: var(--color-white);
   font-size: 56px;
   font-weight: bold;
   text-align: center;
@@ -24,16 +24,16 @@
 
 .lets-create__description {
   font-family: "Fredoka", sans-serif;
-  color: white;
+  color: var(--color-white);
   font-size: 18px;
   text-align: center;
 }
 
 .lets-create__button--contact {
   font-size: 14px;
-  color: white;
+  color: var(--color-white);
   padding: 15px 50px;
-  background-color: #f8ba39;
+  background-color: var(--color-yellow);
   border-radius: 20px;
   font-weight: bold;
   border: none;
