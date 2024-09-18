@@ -8,7 +8,7 @@
 
 .time-flies__title {
   font-family: "Fredoka", sans-serif;
-  color: white;
+  color: var(--color-white);
   font-size: 56px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -18,13 +18,13 @@
 .time-flies__title--secondary {
   font-family: "Fredoka", sans-serif;
   font-size: 56px;
-  color: #f8ba39;
+  color: var(--color-yellow);
   font-weight: bold;
 }
 
 .time-flies__text--primary {
   font-family: "Fredoka", sans-serif;
-  color: white;
+  color: var(--color-white);
   font-size: 20px;
   margin-bottom: 40px;
   line-height: 1.5;
@@ -33,23 +33,23 @@
 
 .time-flies__text--secondary {
   font-family: "Fredoka", sans-serif;
-  color: white;
+  color: var(--color-white);
   font-size: 18px;
 }
 
 .time-flies__dots-group {
-  color: white;
+  color: var(--color-white);
   font-weight: auto;
 }
 
 .time-flies__button--learn-more {
   font-family: "Fredoka", sans-serif;
   font-size: 14px;
-  color: white;
+  color: var(--color-white);
   display: inline-block;
   padding: 15px 50px;
   text-decoration: none;
-  background-color: #f8ba39;
+  background-color: var(--color-yellow);
   border-radius: 20px;
   font-weight: bold;
   border: none;
@@ -75,4 +75,9 @@
   margin: 0 auto;
   text-align: center;
   padding: 20px;
+}
+
+.general {
+  width: 40%;
+  margin-left: 10%;
 }

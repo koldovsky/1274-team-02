@@ -1,26 +1,17 @@
-.button-name-learn-more{
+.button{
     display: inline-block;
     font-size: 15.4px;
     font-family: "Fredoka", cursive;
     font-optical-sizing: auto;
     font-weight: 700;
     color: var(--color-main-text);
-    background: var(--button-color);
     padding: 20px 51px;
     border-radius: 20px;
     margin-top: 25px;
 }
-.button-name-learn-more:hover{
+.button:hover{
     transform: 10;
     text-decoration: none;
     display: inline-block;
-    font-size: 15.4px;
-    font-family: "Fredoka", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
     color: var(--color-main-text);
-    background: var(--dark-button-color);
-    padding: 20px 51px;
-    border-radius: 20px;
-    margin-top: 25px;
 }
