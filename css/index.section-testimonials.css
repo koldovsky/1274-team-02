@@ -30,14 +30,19 @@
 .testimonials__header-h3,
 .testimonials__main-center-p11{
     color: var(--color-main-text);
-    margin: auto;
+    margin: 0 25px;
+}
+
+.testimonials__main-center-p21{
+    color: var(--color-main-text);
+    padding-top: 10px;
 }
 
 .testimonials__main-center-p1{
     display: flex;
     justify-content: center;
     font-family: "Nunito", sans-serif;
-    
+    margin: 0 25px;
 }
 .testimonials__main{
     position: relative;
@@ -112,6 +117,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .testimonials__header-h2{
@@ -146,40 +153,20 @@
 }
 
 
-.testimonials__main-arrow-left {
-    
-    display: inline-block; 
+
+
+.top-games__carousel-games-button-left, 
+.top-games__carousel-games-button-right {
     position: absolute;
-    top: 170px;
-    left: 20px;
-    z-index: 10;
-    width: 15px; 
-    height: 15px; 
-    border-right: 2px solid black; 
-    border-bottom: 2px solid black;
-    transform: rotate(135deg);
-    
-    cursor: pointer;
-    color: var(--color-main-text);
-    background-color: #af3c6d;
-  }
-  .testimonials__main-arrow-right {
-    display: inline-block;
-    position: absolute;
-    top: 160px;
-    right: 20px;
-    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-main-text);
     border: none;
-    display: inline-block;
-    width: 15px;  
-    height: 15px; 
-    border-right: 2px solid black; 
-    border-bottom: 2px solid black;
-    transform: rotate(45deg); 
-    transform: rotate(135deg);
-    transform: rotate(-45deg);
-    cursor: pointer;
-    color: var(--color-main-text);
-    background-color: #af3c6d;
-    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
