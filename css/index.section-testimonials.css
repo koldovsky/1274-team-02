@@ -65,15 +65,15 @@
 }
 
 .testimonials__color3{
-    color: #F47C67;
+    color: var(--color-orange-testimonials);
 }
 
 .testimonials__color2{
-    color: #80C8FE;
+    color: var(--color-blue-testimonials);
 }
 
 .testimonials__color1{
-    color: #F9BA38;
+    color: var(--color-yellow-testimonials);
 }
 
 .testimonials__main{

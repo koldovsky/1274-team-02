@@ -11,6 +11,7 @@
 }
 
 :root {
+
     --ui-brand-color: #f9ba38;
     --collor-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
@@ -35,6 +36,9 @@
     --button-submit-hover: #c1305c;
     --color-yellow: #f8ba39;
     --color-white: #ffffff;
+    --color-orange-testimonials:  #F47C67;
+    --color-blue-testimonials: #80C8FE;
+    --color-yellow-testimonials: #F9BA38;
 }
 
 img {
