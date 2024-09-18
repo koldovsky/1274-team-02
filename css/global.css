@@ -39,6 +39,9 @@
     --color-orange-testimonials:  #F47C67;
     --color-blue-testimonials: #80C8FE;
     --color-yellow-testimonials: #F9BA38;
+    --dark-button-color:rgb(20, 168, 91);
+    --dark-orange-for-button:#f9ba38;
+    --bacground-when-button-active:#1d4759;
 }
 
 img {
