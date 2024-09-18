@@ -28,6 +28,7 @@
     --dark-orange-for-button:#f9ba38;
     --bacground-when-button-active:#1d4759;
     scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
 }
 
 img {
