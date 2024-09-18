@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
 .part {
     background-image: url("../img/astronaut/astronaut.png");
     background-size: auto;
@@ -14,7 +12,7 @@
     font-size: 56px;
     font-family: "Fredoka", cursive;
     font-weight: 400;
-    color:white;
+    color: var(--color-main-text);
     line-height: 56зч;
     width: auto;
     height: auto;
@@ -24,7 +22,7 @@
 }
 
 .part2 {
-    background-color: #103758;
+    background-color: var(--color-background-card);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +33,7 @@
 
 .video__text {
     tab-size: 25px;
-    color: var(--color-main-text);
+    color: var(--color-white);
 }
 
 .video__content {
@@ -44,7 +42,7 @@
 }
 
 .mobile-games {
-    background-color: #6c3064;
+    background-color: var(--color-berry);
     text-align: center;
     display: grid;
 }
@@ -53,13 +51,13 @@
     font-size: 40px;
     font-family: "Fredoka", cursive;
     font-weight: 700;
-    color: white;
+    color: var(--color-white);
     line-height: 1;
     padding-top: 20px;
 }
 
 .mobile-games__p {
-    color: #F9BA38;
+    color: var(--ui-brand-color);
     font-size: 40px;
     font-weight: 700;
     line-height: 1;
@@ -67,7 +65,7 @@
 }
 
 .mobile-games__description {
-    color: white;
+    color: var(--color-white);
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -78,17 +76,16 @@
 
 .mobile-games__image {
     width: 70px;
-    height: 70px;
     margin-right: 15px;
 }
 
 .mobile-games__box {
     border: 1px solid;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: 20px;
-    background-color: #F65E74;
-    justify-content:space-around;
+    background-color: var(--color-orange-testimonials);
+    justify-content: space-around;
 
 
     .mobile-games__item game {
@@ -96,8 +93,6 @@
     }
 
 }
-
-
 
 .item article {
     display: inline-block;
@@ -112,7 +107,7 @@
 .game__title {
     font-size: 22px;
     text-align: left;
-    color: white;
+    color: var(--color-white);
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -122,13 +117,13 @@
 
 .underline {
     border-bottom: 2px solid;
-    color: #cb616b;
+    color: var(--accent-color);
     width: 20%;
 }
 
 .game__price {
     font-size: 20px;
-    color: #F9BA38;
+    color: var(--ui-brand-color);
     text-align: end;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -140,15 +135,17 @@
 .game__description {
     margin-top: 10px;
     font-size: 16px;
-    color: white;
+    color: var(--color-white);
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 
 }
-@media (min-width:600px){
-    .mobile-games__box{
-    display: flex;
-    flex-direction:row ;}
+
+@media (min-width:600px) {
+    .mobile-games__box {
+        display: flex;
+        flex-direction: row;
+    }
 }
