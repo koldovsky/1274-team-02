@@ -37,11 +37,15 @@ function lovefunc(flower1, flower2) {
 }
 https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-    // Значення передаються як параметри, не потрібно повторно оголошувати
     return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
-
-// Викликаємо функцію з конкретними значеннями
 let totalGoals = goals(2, 12, 10);
 
+https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
 console.log(totalGoals); 
+function makeNegative(num) {
+    return num < 0 ? num : -num;
+}
+console.log(makeNegative(2));  
+console.log(makeNegative(-4)); 
+console.log(makeNegative(1));  
