@@ -56,3 +56,8 @@ function past(h, m, s) {
 function isDivisible(n, x, y) {
   return n % x === 0 && n % y === 0 ? true : false;
 }
+
+//https://www.codewars.com/kata/5583090cbe83f4fd8c000051/train/javascript
+function digitize(n) {
+  return n.toString().split('').reverse().map(Number);
+}
