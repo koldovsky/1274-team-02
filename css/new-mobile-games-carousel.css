@@ -14,7 +14,7 @@
 
 .new-mobile-games__carousel-photo {
     width: 293px;
-    height: 508.375px;
+    /*height: 508.375px;*/
 
 
 }
@@ -41,7 +41,6 @@
     color: white;
     margin-bottom: 30px;
     font-size: 63px;
-    width: 539.53;
     font-weight: bold;
     
 
@@ -65,7 +64,13 @@
 
 }
 .new-mobile-games__carousel-slide{
-    width: 280px;
+    width: 30%;
+}
+
+@media (min-width:700px) {
+    .new-mobile-games__carousel-slide {
+        width: 80%;
+    }
 }
 
 .new-mobile-games__points {
