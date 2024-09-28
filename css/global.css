@@ -13,7 +13,7 @@
 :root {
 
     --ui-brand-color: #f9ba38;
-    --collor-accent: rgb(249, 186, 56);
+    --color-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
     --text-color: black;
     --border-color: black;
@@ -30,7 +30,7 @@
     scroll-behavior: smooth;
     --border-top-games-color: #14385d;
     --title-top-game-color: #19ca6d;
-    --subtitle-top-game-color: #c4cdd6;
+    --accent-top-game-color: #bcc7d1;
     --dark-orange-for-button: #f9ba38;
     --bacground-when-button-active: #1d4759;
     --button-submit-hover: #c1305c;
