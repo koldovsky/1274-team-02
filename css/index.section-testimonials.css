@@ -117,8 +117,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    
+}
+
+
+.carousel-inner{
+    padding: 0 15px;
+}
+
+@media (min-width: 1000px) {
+    .carousel-inner{
+        padding: 0 75px;
+    }
 }
 
 .testimonials__header-h2{
@@ -129,9 +139,7 @@
     font-size: 20px;
 }
 
-.testimonials__main-center-p11{
-    margin: 0 25px;
-}
+
 
 .testimonials__main-center-img,
 .testimonials__header-h{
@@ -143,12 +151,22 @@
     .testimonials__main-center-imgg{
         width: 120px;
     }
+    .carousel-inner{
+        padding: 0 35px;
+    }
+    .testimonials__main-center-p1{
+        padding: 0 30px;
+    }
 }
 
 @media (min-width: 990px){
     .testimonials__header-points-p{
         
         font-size: 40px;
+    }
+
+    .testimonials__main-center-p1{
+        padding: 0 150px;
     }
 }
 
