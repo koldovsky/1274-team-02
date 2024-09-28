@@ -108,7 +108,7 @@ function renderPages(pages) {
     }
     pagesHtml += `</section>`;
   }
-  const pagesContainer = document.querySelector('.most-popular-game-pages');
+  const pagesContainer = document.querySelector(".most-popular-game-pages");
   pagesContainer.innerHTML = pagesHtml;
 }
 
