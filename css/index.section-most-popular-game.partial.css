@@ -49,6 +49,10 @@
     font-family: "Nunito", sans-serif;
 }
 
+.most-popular-game-xbox-title-picture {
+    width: 20px;
+}
+
 .most-popular-game-card {
     margin-top: 7.5px;
     margin-bottom: 7.5px;
