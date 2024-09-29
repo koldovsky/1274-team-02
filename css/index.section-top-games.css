@@ -198,4 +198,11 @@
     display: flex;
     gap: 10px;
   }
+  .top-games__carousel-games-button-left {
+    left: -50px;
+  }
+  
+  .top-games__carousel-games-button-right {
+    right: -50px;
+  }
 }
