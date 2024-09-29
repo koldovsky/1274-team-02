@@ -3,6 +3,13 @@ import { games, renderGame } from "./index.section-top-games.js";
 let currentSlide = 0;
 renderGame(games[currentSlide]);
 
+function updateDots() {
+  const dots = document.querySelectorAll(".top-games__carousel-games-dot");
+  dots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === currentSlide);
+  });
+}
+
 function nextSlide() {
   currentSlide = (currentSlide + 1) % games.length;
   renderGame(games[currentSlide]);
