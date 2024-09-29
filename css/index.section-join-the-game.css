@@ -10,7 +10,7 @@
   padding: 0 24px;
   max-width: 550px;
   min-height: 500px;
-  margin: auto;
+  margin-left: 15%;
 }
 
 .join-the-game__title {
@@ -66,15 +66,18 @@
   background-color: var(--button-submit-hover);
 }
 
+@media (max-width: 1045px) {
+  .join-the-game__container {
+    margin-left: 3%;
+  }
+}
+
 @media (min-width: 768px) {
   .join-the-game__title {
     font-size: 65px;
   }
-
-  .join-the-game__container {
-    width: 50%;
-  }
 }
+
 
 @media (min-width: 992px) {
   .join-the-game__title {
