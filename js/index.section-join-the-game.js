@@ -31,6 +31,6 @@ function writeSubtitleWords(arr) {
   else subtitle.innerHTML += arr[currentIndexWords++];
 }
 
-setInterval(() => changeColor(titleColor, title), 800);
-setInterval(() => changePoints(pointsCount), 600);
+setInterval(() => changeColor(titleColor, title), 900);
+setInterval(() => changePoints(pointsCount), 700);
 setInterval(() => writeSubtitleWords(subtitleText), 20);
