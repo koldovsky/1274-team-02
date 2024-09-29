@@ -36,7 +36,7 @@ export const games = [
     platform: "Android, iOS",
     price: "35",
     rating: "4.9",
-  }
+  },
 ];
 
 export function renderGame(game) {
@@ -89,4 +89,3 @@ export function renderGame(game) {
 }
 
 renderGame(games[0]);
-

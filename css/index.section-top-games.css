@@ -36,15 +36,15 @@
 
 .top-games__carousel-games {
   position: relative;
-  max-width: 950px;
+  max-width: 1100px;
   margin: auto;
 }
 
 .top-games__carousel-games-inner-slide {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-background-card);
-  overflow: hidden; 
+  background-color: var(--background-border-top-game);
+  overflow: hidden;
 }
 
 .top-games__carousel-games-inner-slide-game {
@@ -55,19 +55,19 @@
 }
 
 .top-games__carousel-games-inner-slide-container {
-  padding: 30px;
   font-family: 'Nunito', sans-serif;
+  padding: 40px;
 }
 
 .top-games__carousel-games-inner-slide-title {
   color: var(--title-top-game-color);
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 800;
 }
 
 .top-games__carousel-games-inner-slide-subtitle {
   color: var(--accent-top-game-color);
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   font-style: italic;
   margin-top: -12px;
@@ -75,7 +75,7 @@
 }
 
 .top-games__carousel-games-inner-slide-text {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .top-games__slide-details-icon {
@@ -126,7 +126,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--color-main-text);
+  background-color: transparent;
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -191,7 +191,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .top-games__download-links {
