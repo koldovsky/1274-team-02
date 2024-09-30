@@ -21,6 +21,7 @@
 }
 .header__navigation-menu-media {
     display: inline-block;
+    
 }
 .header__navigation-menu{
     display: none;
@@ -122,7 +123,7 @@ a.header__navigation-menu-media_force:hover path.outer_bDW {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 120%;
     background: var(--bacground-when-button-active);
     flex-direction: column;
 }
@@ -155,6 +156,10 @@ a.header__navigation-menu-media_force:hover path.outer_bDW {
 
 }
 @media (max-width: 990px){
+    .header li{
+        position: relative;
+        left:-20px;
+    }
     .header__navigation-menu-link{
         position: relative;
         top: 140px;
