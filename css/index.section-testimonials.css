@@ -82,6 +82,18 @@
     
 }
 
+.testimonials__header-h{
+    display: flex;
+    text-align: center;
+}
+
+
+.testimonials__main-center-p{
+    padding: 0 25px;
+    display: flex;
+    text-align: center;
+}
+
 .testimonials__main-center-social-media{
     display: flex;
     flex-direction: row;
