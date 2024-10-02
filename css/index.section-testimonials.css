@@ -119,6 +119,8 @@
 .testimonials__header-text{
     display: flex;
     justify-content: center;
+    align-items: center;
+    
 }
 .testimonials__container{
     padding: 0 24px;
@@ -137,8 +139,20 @@
 
 .carousel-inner{
     padding: 0 15px;
+    min-height: 700px;
 }
 
+@media (min-width: 360px) {
+    .carousel-inner{
+        min-height: 540px;
+    }
+}
+
+@media (min-width: 650px) {
+    .carousel-inner{
+        min-height: 440px;
+    }
+}
 
 .carousel-indicators{
     position: absolute;
@@ -150,6 +164,7 @@
 @media (min-width: 1000px) {
     .carousel-inner{
         padding: 0 75px;
+        min-height: 440px;
     }
 }
 
