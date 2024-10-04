@@ -3,6 +3,7 @@ function init() {
   import("./index.section-top-games-carousel.js");
   import("./index.section-top-games.js");
   import("./index.section-join-the-game.js");
+  import("./index.section-header-menu.js");
 }
 
 const totalPartials = document.querySelectorAll(

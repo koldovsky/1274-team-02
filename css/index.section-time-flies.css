@@ -70,13 +70,6 @@
   font-family: "Fredoka", sans-serif;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-}
-
 .general {
   width: 40%;
   margin-left: 10%;
