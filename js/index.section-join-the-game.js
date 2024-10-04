@@ -34,3 +34,17 @@ function writeSubtitleWords(arr) {
 setInterval(() => changeColor(titleColor, title), 900);
 setInterval(() => changePoints(pointsCount), 700);
 setInterval(() => writeSubtitleWords(subtitleText), 20);
+
+
+const modal = document.querySelector(".modal-join-the-game");
+const btnSubmit = document.querySelector(".join-the-game__submit");
+const btnClose = document.querySelector(".modal-join-the-game__button");
+
+
+btnSubmit.addEventListener("click", () => {
+  modal.classList.toggle("modal-join-the-game--visible");
+})
+
+btnClose.addEventListener("click", () => {
+  modal.classList.remove("modal-join-the-game--visible");
+})
