@@ -35,16 +35,24 @@ setInterval(() => changeColor(titleColor, title), 900);
 setInterval(() => changePoints(pointsCount), 700);
 setInterval(() => writeSubtitleWords(subtitleText), 20);
 
-
 const modal = document.querySelector(".modal-join-the-game");
 const btnSubmit = document.querySelector(".join-the-game__submit");
 const btnClose = document.querySelector(".modal-join-the-game__button");
 
+const emailInput = document.querySelector(".join-the-game__email");
 
-btnSubmit.addEventListener("click", () => {
-  modal.classList.toggle("modal-join-the-game--visible");
-})
+btnSubmit.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const emailValue = emailInput.value;
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if (emailPattern.test(emailValue)) {
+    modal.classList.toggle("modal-join-the-game--visible");
+  } else {
+  }
+});
 
 btnClose.addEventListener("click", () => {
   modal.classList.remove("modal-join-the-game--visible");
-})
+});
