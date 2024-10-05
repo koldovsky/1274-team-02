@@ -61,7 +61,6 @@
 .modal-join-the-game__icon {
   text-align: center;
   display: inline-block;
-  width: 24px;
   height: 24px;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -79,7 +78,8 @@
   margin: 10px 0;
 }
 
-.modal-join-the-game__button {
+.modal-join-the-game__button--red,
+.modal-join-the-game__button--green {
   background-color: var(--dark-orange-for-button);
   border: none;
   color: var(--color-white);
@@ -88,8 +88,24 @@
   margin-top: 15px;
   font-size: 15px;
   font-weight: bold;
+  text-transform: uppercase;
+  transition: all .5s ease;
+
 }
 
-.modal-join-the-game__button:hover {
-  background-color: var(--accent-color);
+.modal-join-the-game__button--green:hover {
+  background-color: green;
+  font-size: 17px;
+  letter-spacing: 1.8px;;
+  box-shadow: green 0px 7px 29px 0px;
+  padding: 10px 40px;
 }
+
+.modal-join-the-game__button--red:hover {
+  background-color: red;
+  font-size: 17px;
+  letter-spacing: 1.8px;;
+  box-shadow: red 0px 7px 29px 0px;;
+  padding: 10px 40px;
+}
+
