@@ -63,7 +63,7 @@ btnSubmit.addEventListener("click", (event) => {
     `;
     title.innerHTML = `Can't send form.`;
     title.style.color = "red";
-    message.innerHTML = `Please try again later.`;
+    message.innerHTML = `Please write correct email.`;
     modal.classList.toggle("modal-join-the-game--visible");
   }
 });
