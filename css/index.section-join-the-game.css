@@ -71,6 +71,8 @@
 .join-the-game__submit:hover {
   letter-spacing: 3px;
   box-shadow: var(--button-submit-hover) 0px 7px 29px 0px;
+  transform: translateY(-4px);
+  transition: 200ms;
 }
 
 .join-the-game__submit:active {
