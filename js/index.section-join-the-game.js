@@ -72,6 +72,7 @@ btnSubmit.addEventListener("click", (event) => {
 
 btnClose.addEventListener("click", () => {
   modal.classList.remove("modal-join-the-game--visible");
-  btnClose.classList.remove("modal-join-the-game__button--red");
-  btnClose.classList.remove("modal-join-the-game__button--green");
+  if (btnClose.classList.contains("modal-join-the-game__button--red"))
+    btnClose.classList.remove("modal-join-the-game__button--red");
+  else btnClose.classList.remove("modal-join-the-game__button--green");
 });
