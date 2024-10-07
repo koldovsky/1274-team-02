@@ -4,180 +4,155 @@
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Fredoka", sans-serif;
-  padding-bottom: 90px;
-  padding-top: 90px;
+  padding: 90px 20px;
   min-width: 320px;
+  color: var(--color-main-text);
 }
 
 .top-games__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 15px;
-}
-
-.top-games__title,
-.top-games__subtitle {
-  box-sizing: border-box;
-  color: var(--color-main-text);
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-
-.top-games__subtitle {
-  box-sizing: border-box;
-  font-size: 40px;
-  font-weight: bold;
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.top-games__title {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.top-games__subtitle {
+  font-size: 40px;
   color: var(--color-accent);
+  font-weight: 700;
   margin-top: -15px;
+  margin-bottom: 20px;
 }
 
 .top-games__text {
-  color: var(--color-main-text);
   font-family: "Nunito", sans-serif;
   font-size: 20px;
-  text-align: center;
-}
-
-.top-games__carousel-games-inner {
-  padding: 15px;
-}
-.top-games__carousel-games-inner-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: var(--border-top-games-color);
-  flex-direction: column;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.top-games__carousel-games-inner-slide-container {
-  padding: 43px;
-}
-.top-games__carousel-games-inner-slide-title {
-  font-family: "Nunito", sans-serif;
-  color: var(--title-top-game-color);
-  font-size: 28px;
-  margin-bottom: 0px;
-  font-weight: 800;
-}
-
-.top-games__carousel-games-inner-slide-subtitle {
-  font-family: "Nunito", sans-serif;
-  color: var(--subtitle-top-game-color);
-  font-size: 16px;
-  font-weight: 600;
-  font-style: italic;
-  margin-top: 30px;
-}
-.top-games__carousel-games-inner-slide-text {
-  font-family: "Nunito", sans-serif;
-  color: var(--color-main-text);
-  font-size: 18px;
-  font-weight: 400;
-}
-.top-games__slide-details {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 10px;
-  font-family: "Nunito", sans-serif;
-}
-
-.top-games__slide-details-icon {
-  grid-column: 1;
-  width: 20px;
-  height: 24px;
-  color: var(--color-accent);
-}
-
-.top-games__slide-details-icon,
-.top-games__slide-details-item {
-  display: flex;
-  align-items: center;
-}
-.top-games__slide-details-item {
-  grid-column: 2;
-  color: var(--subtitle-top-game-color);
-  font-size: 16px;
-}
-
-.top-games__slide-details-label {
-  color: var(--color-main-text);
-  font-weight: 700;
-  padding-right: 5px;
-}
-
-.top-games__download {
-  margin-top: 20px;
-}
-
-.top-games__download-text {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--color-main-text);
-}
-
-.top-games__download-links {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.top-games__download-link {
-  width: 120px;
-  height: auto;
-  border: 0.5px solid white;
-  border-radius: 8px;
-  box-shadow: 0 0 0 0.5px white;
-}
-.top-games__carousel-games-button-left,
-.top-games__carousel-games-button-right {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: var(--color-main-text);
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.top-games__carousel-games-button-left-small-arrow-svg,
-.top-games__carousel-games-button-right-small-arrow-svg {
-  width: 12px;
-  height: 12px;
 }
 
 .top-games__carousel-games {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.top-games__carousel-games-content {
-  flex: 1;
+.top-games__carousel-games-inner-slide {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-border-top-game);
+  overflow: hidden;
+}
+
+.top-games__carousel-games-inner-slide-game {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.top-games__carousel-games-inner-slide-container {
+  font-family: 'Nunito', sans-serif;
+  padding: 40px;
+}
+
+.top-games__carousel-games-inner-slide-title {
+  color: var(--title-top-game-color);
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.top-games__carousel-games-inner-slide-subtitle {
+  color: var(--accent-top-game-color);
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: -12px;
+  margin-bottom: 10px;
+}
+
+.top-games__carousel-games-inner-slide-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.top-games__slide-details {
+  margin-bottom: 20px;
+}
+
+.top-games__slide-details-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.top-games__slide-details-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.top-games__slide-details-item-title {
+  font-weight: 700;
+}
+
+.top-games__slide-details-item-text {
+  color: var(--accent-top-game-color);
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.top-games__download-text {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.top-games__download-links {
+  display: grid;
+  gap: 10px;
+}
+
+.top-games__download-link {
+  width: 120px;
+}
+
+.top-games__carousel-games-button-left,
+.top-games__carousel-games-button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.top-games__carousel-games-button-left {
+  left: -20px;
+}
+
+.top-games__carousel-games-button-right {
+  right: -20px;
 }
 
 .top-games__carousel-games-dots {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.top-games__carousel-games-dot-1,
-.top-games__carousel-games-dot-2,
-.top-games__carousel-games-dot-3 {
+.top-games__carousel-games-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -188,29 +163,47 @@
   opacity: 0.5;
 }
 
-.top-games__carousel-games-dot-1 {
+.top-games__carousel-games-dot.active {
   opacity: 1;
 }
-.top-games__carousel-games-button-left,
-.top-games__carousel-games-button-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: var(--color-main-text);
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
 
-.top-games__carousel-games-button-left {
-  left: 10px;
-}
+@media (min-width: 768px) {
 
-.top-games__carousel-games-button-right {
-  right: 10px;
+  .top-games__title {
+    font-size: 50px;
+    }
+  .top-games__subtitle {
+    font-size: 60px;
+  }
+
+  .top-games__carousel-games-inner-slide {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .top-games__carousel-games-inner-slide-game {
+    width: 45%;
+    height: auto;
+  }
+
+  .top-games__carousel-games-inner-slide-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .top-games__download-links {
+    display: flex;
+    gap: 10px;
+  }
+  .top-games__carousel-games-button-left {
+    left: -50px;
+  }
+  
+  .top-games__carousel-games-button-right {
+    right: -50px;
+  }
 }

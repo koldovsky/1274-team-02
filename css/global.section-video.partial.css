@@ -24,7 +24,6 @@
 .video__image {
     max-width: 80%;
     margin: auto;
-    /* margin: 0px 10px; */
     margin-bottom: 15px;
 }
 
@@ -41,7 +40,6 @@
 }
 
 .video__text {
-    font-family: "Nunito", sans-serif;
     text-align: center;
     tab-size: 25px;
     color: var(--color-main-text);
@@ -74,12 +72,9 @@
     width: 300px;
     height: 500px;
     margin: auto;
-    font-family: "Nunito", sans-serif;
-    
 }
 
 .video__card-con-item {
-    display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

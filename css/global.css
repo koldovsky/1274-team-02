@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:wght@200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Fredoka One');
 
 *,
 *::after,
@@ -10,8 +11,9 @@
 }
 
 :root {
+
     --ui-brand-color: #f9ba38;
-    --collor-accent: rgb(249, 186, 56);
+    --color-accent: rgb(249, 186, 56);
     --color-main-text: #ffffff;
     --text-color: black;
     --border-color: black;
@@ -28,12 +30,19 @@
     scroll-behavior: smooth;
     --border-top-games-color: #14385d;
     --title-top-game-color: #19ca6d;
-    --subtitle-top-game-color: #c4cdd6;
+    --accent-top-game-color: #bcc7d1;
+    --background-border-top-game: #14385d;
     --dark-orange-for-button: #f9ba38;
     --bacground-when-button-active: #1d4759;
     --button-submit-hover: #c1305c;
     --color-yellow: #f8ba39;
     --color-white: #ffffff;
+    --color-orange-testimonials:  #F47C67;
+    --color-blue-testimonials: #80C8FE;
+    --color-yellow-testimonials: #F9BA38;
+    --dark-button-color:rgb(20, 168, 91);
+    --dark-orange-for-button:#f9ba38;
+    --bacground-when-button-active:#1d4759;
 }
 
 img {

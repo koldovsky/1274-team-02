@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ff6b81;
+  background-color: var(--color-background-card);
   padding: 90px 0 50px 0;
   position: relative;
 }
@@ -16,7 +16,7 @@
 
 .our-team__title {
   font-family: "Fredoka", sans-serif;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   font-size: 40px;
   font-weight: bold;
   text-align: center;
@@ -25,7 +25,7 @@
 }
 
 .our-team__container-points {
-  color: rgb(248, 186, 57);
+  color: var(--collor-accent);
   font-size: 21px;
   letter-spacing: 0px;
   font-weight: 400;
@@ -34,12 +34,12 @@
 
 .our-team__description {
   font-family: "Fredoka", sans-serif;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   font-size: 20px;
   font-weight: 400;
   text-align: center;
   padding: 25px 0;
-  line-height: 1, 5;
+  line-height: 1.5;
 }
 
 .our-team__carousel-profiles {
@@ -58,7 +58,7 @@
 
 .our-team__profile-name {
   font-family: "Fredoka", sans-serif;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   font-size: 24px;
   font-weight: 500;
   text-align: center;
@@ -68,7 +68,7 @@
 
 .our-team__profile-role {
   font-family: "Fredoka", sans-serif;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   opacity: 0.75;
   font-size: 18px;
   font-weight: 400;
@@ -77,11 +77,45 @@
   line-height: 1;
 }
 
+.carousel__arrow {
+  display: flex;
+  position: absolute;
+  top: 58%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  background-color: var(--color-white);
+  color: var(--text-color);
+  opacity: 0.75;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel__arrow--left {
+  left: 10px;
+}
+
+.carousel__arrow--right {
+  right: 10px;
+}
 @media (min-width: 600px) {
   .our-team__carousel-profiles-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 30px;
+  }
+  .carousel__arrow--left {
+    left: 10px; 
+  }
+  
+  .carousel__arrow--right {
+    right: 10px;
   }
 }
 
@@ -91,5 +125,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
+  }
+  .carousel__arrow--left {
+    left: 170px;
+  }
+  
+  .carousel__arrow--right {
+    right: 170px;
   }
 }
