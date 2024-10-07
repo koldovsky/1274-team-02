@@ -177,3 +177,9 @@
         background-position: top center;
     }
 }
+
+.footer__clock {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: var(--color-white);
+}
