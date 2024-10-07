@@ -4,6 +4,7 @@ function init() {
   import("./index.section-top-games.js");
   import("./index.section-join-the-game.js");
   import("./index.section-header-menu.js");
+  import("./index.section-footer-clock.js");
 }
 
 const totalPartials = document.querySelectorAll(
