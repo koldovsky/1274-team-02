@@ -5,6 +5,7 @@ function init() {
   import("./index.section-join-the-game.js");
   import("./index.section-header-menu.js");
   import("./index.section-footer-clock.js");
+  import("./index.new-mobile-games-carousel.js");
 }
 
 const totalPartials = document.querySelectorAll(
