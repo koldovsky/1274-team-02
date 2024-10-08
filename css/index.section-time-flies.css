@@ -57,6 +57,9 @@
 
 .time-flies__button--learn-more:hover {
   cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-yellow);
+  text-decoration: none;
 }
 
 .time-flies__title,

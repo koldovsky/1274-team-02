@@ -29,18 +29,21 @@
   text-align: center;
 }
 
-.lets-create__button--contact {
-  font-size: 14px;
+.lets-create__button {
+  text-decoration: none;
   color: var(--color-white);
-  padding: 15px 50px;
   background-color: var(--color-yellow);
+  padding: 15px 50px;
   border-radius: 20px;
-  font-weight: bold;
   border: none;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.time-flies__button--learn-more:hover {
-  cursor: pointer;
+.lets-create__button:hover {
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-yellow);
 }
 
 .lets-create__actions {
