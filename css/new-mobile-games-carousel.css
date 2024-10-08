@@ -147,6 +147,7 @@
 .new-mobile-games__carousel-app-store , .new-mobile-games__carousel-google-play{
     margin-top: 35px;
     margin-right: 15px;
+    display: flex;
 }
 
 .new-mobile-games__carousel-google-play {
@@ -167,9 +168,7 @@
     margin-right: 3px;
 }
 
-/*.new-mobile-games{
-    margin-bottom: 70px;
-/* }  */
+
 @media (max-width: 340px) {
     .new-mobile-games__block-carousel {
         overflow: hidden; 
@@ -193,4 +192,46 @@
         width: 100%; 
         text-align: center;
     }
+
+    }
+
+}
+
+.new-mobile-games__carousel-slide {
+    display: none; 
+}
+
+
+.new-mobile-games__carousel-slide.active {
+    display: block; 
+}
+
+
+@media (min-width: 340px) {
+    .new-mobile-games__carousel-slide {
+        display: none; 
+    }
+
+    .new-mobile-games__carousel-slide:nth-child(n+1):nth-child(-n+3) {
+        display: block; 
+    }
+}
+
+
+@media (max-width: 340px) {
+    .new-mobile-games__carousel-slide {
+        display: none; 
+    }
+
+    .new-mobile-games__carousel-slide:nth-child(1) {
+        display: block; 
+    }
+}
+
+.new-mobile-games__carousel-block-app-google {
+    display: flex;
+    
+}
+.new-mobile-games__carousel-slide {
+    display: flex;
 }
