@@ -1,23 +1,23 @@
-let currentIndex = 0; // Індекс поточного слайду
+let currentIndex = 0; 
 const slides = document.querySelectorAll('.new-mobile-games__carousel-slide');
 const totalSlides = slides.length;
 
-// Функція для відображення слайдів
+
 function showSlides() {
     slides.forEach((slide, index) => {
         if (index >= currentIndex && index < currentIndex + 3) {
-            slide.style.display = 'block'; // Показати слайд
+            slide.style.display = 'block'; 
         } else {
-            slide.style.display = 'none'; // Сховати слайд
+            slide.style.display = 'none'; 
         }
     });
 }
 
-// Функція для переходу до наступного слайду
+
 function nextSlide() {
     currentIndex++;
     
-    // Якщо досягли останнього слайду, скидаємо на перший
+   
     if (currentIndex > totalSlides - 3) {
         currentIndex = 0;
     }
@@ -25,21 +25,21 @@ function nextSlide() {
     showSlides();
 }
 
-// Функція для переходу до попереднього слайду
+
 function prevSlide() {
     currentIndex--;
     
-    // Якщо досягли першого слайду, переходимо до останнього
+    
     if (currentIndex < 0) {
-        currentIndex = totalSlides - 3; // Повертаємо на третій останній слайд
+        currentIndex = totalSlides - 3; 
     }
     
     showSlides();
 }
 
-// Додати обробники подій для кнопок
+
 document.querySelector('.new-mobile-games__carousel-button-next').addEventListener('click', nextSlide);
 document.querySelector('.new-mobile-games__carousel-button-prev').addEventListener('click', prevSlide);
 
-// Показати початкові слайди
+
 showSlides();

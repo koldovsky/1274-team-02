@@ -14,7 +14,6 @@
 
 .new-mobile-games__carousel-photo {
     width: 293px;
-    /*height: 508.375px;*/
 
 
 }
@@ -168,6 +167,30 @@
     margin-right: 3px;
 }
 
-.new-mobile-games{
+/*.new-mobile-games{
     margin-bottom: 70px;
+/* }  */
+@media (max-width: 340px) {
+    .new-mobile-games__block-carousel {
+        overflow: hidden; 
+
+    .new-mobile-games__carousel-slide {
+        display: none;
+        width: 100%; 
+    }
+
+    .new-mobile-games__carousel-slide.active {
+        display: block; 
+    }
+
+    .new-mobile-games__carousel-button {
+        margin: 10px;
+    }
+
+    .button_left,
+    .button_right {
+        display: block; 
+        width: 100%; 
+        text-align: center;
+    }
 }
